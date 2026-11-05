@@ -4,6 +4,7 @@
   python3 cli.py "lowkey deleted my hinge lol"
   python3 cli.py "k." --after "omg how was the concert?? tell me everything" --delay 600
   python3 cli.py --file examples/jay.txt --them Jay
+  python3 cli.py --file examples/exports/instagram/message_1.json      # Instagram, TikTok, Snapchat, SMS exports too
   python3 cli.py                      # paste texts one at a time
   python3 cli.py --eval               # check the reading against the labelled examples
 """
@@ -14,7 +15,8 @@ import json
 import sys
 from pathlib import Path
 
-from subtext.chat_parser import parse_file, participants
+from subtext.chat_parser import participants
+from subtext.importers import read_exports
 from subtext.decoder import PLATFORMS, STAGES, decode_chat, decode_message, format_message, format_overview
 
 ROOT = Path(__file__).resolve().parent
@@ -46,7 +48,9 @@ def main(argv: list[str] | None = None) -> None:
         description="Read between the lines of their texts and get reply ideas."
     )
     p.add_argument("text", nargs="*", help="one of their texts (blank: paste texts one by one)")
-    p.add_argument("--file", help="read a whole chat export (WhatsApp .txt, 'Name: text', CSV or JSON)")
+    p.add_argument("--file", help="read a whole chat: WhatsApp .txt, 'Name: text', CSV, JSON, or an Instagram, "
+                                  "TikTok, Snapchat or SMS Backup export (a file or a folder)")
+    p.add_argument("--chat", help="with --file: which conversation, when the export holds several")
     p.add_argument("--them", help="with --file: whose texts to read")
     p.add_argument("--me", help="with --file: your sender name")
     p.add_argument("--after", help="what you sent right before their text (to judge effort balance)")
@@ -61,7 +65,19 @@ def main(argv: list[str] | None = None) -> None:
     if args.eval:
         return run_eval()
     if args.file:
-        msgs = parse_file(args.file)
+        convs = read_exports([args.file])
+        if not convs:
+            sys.exit(f"No messages found in {args.file}.")
+        if args.chat:
+            w = args.chat.lower()
+            convs = [c for c in convs if c.title.lower() == w] or [c for c in convs if w in c.title.lower()]
+        if len(convs) != 1:
+            sys.exit("Pick a conversation with --chat. In there: " + ", ".join(
+                f"{c.title} ({len(c.messages)})" for c in read_exports([args.file])))
+        conv = convs[0]
+        msgs = conv.messages
+        args.them = args.them or conv.them
+        args.me = args.me or conv.me
         if not args.them:
             sys.exit("Say whose texts to read with --them. People in that file: "
                      + ", ".join(f"{n} ({c})" for n, c in participants(msgs)))
