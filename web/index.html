@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subtext · decode their texts</title>
+  <meta name="description" content="Paste what your crush, talking stage or situationship sent. Read its tone, how interested they are, the stage you're in, the ghosting risk, and how to text back.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Subtext">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="shell">
+
+  <!-- Sidebar: the product, its four screens -->
+  <nav class="side" aria-label="Subtext">
+    <a class="brand" href="#decode" aria-label="Subtext home">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true">
+        <path d="M5 6.5A3.5 3.5 0 0 1 8.5 3h11A3.5 3.5 0 0 1 23 6.5v8a3.5 3.5 0 0 1-3.5 3.5H12l-5 4.5V18a2 2 0 0 1-2-2z" fill="var(--accent)"/>
+        <circle cx="10" cy="10.6" r="1.5" fill="#000"/><circle cx="14" cy="10.6" r="1.5" fill="#000"/><circle cx="18" cy="10.6" r="1.5" fill="#000"/>
+      </svg>
+      <span>Subtext</span>
+    </a>
+    <ul class="nav">
+      <li><a href="#decode" data-screen="decode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H10l-4 3.5V16a2 2 0 0 1-2-2z"/></svg>
+        <span>Decode a text</span></a></li>
+      <li><a href="#chat" data-screen="chat">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h8A2.5 2.5 0 0 1 16 5.5v5a2.5 2.5 0 0 1-2.5 2.5H8l-3 2.5V13a2 2 0 0 1-2-2z"/><path d="M19 8.5a2 2 0 0 1 2 2V16a2 2 0 0 1-2 2v2.5L16 18h-4.5a2 2 0 0 1-2-2"/></svg>
+        <span>Read a whole chat</span></a></li>
+    </ul>
+    <p class="nav-group">Reference</p>
+    <ul class="nav">
+      <li><a href="#library" data-screen="library">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h10"/></svg>
+        <span>Slang library</span></a></li>
+      <li><a href="#guide" data-screen="guide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h4l3-6 3 3 6-9"/><circle cx="20" cy="6" r="1"/></svg>
+        <span>Stages and apps</span></a></li>
+    </ul>
+    <p class="side-foot">Runs in your browser. Nothing you paste is uploaded.</p>
+  </nav>
+
+  <!-- Top bar: look up a word, and which app you're talking on -->
+  <header class="top">
+    <form class="lookup" id="lookupForm" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <input id="lookup" type="search" placeholder="Look up a word or emoji: rizz, delulu, 💀" aria-label="Look up a word or emoji" autocomplete="off"> <!-- taste-skill-ignore: an emoji you can look up / paste, it is the content -->
+    </form>
+    <div class="switcher">
+      <label for="platform" class="switcher-label">Talking on</label>
+      <select id="platform"></select>
+    </div>
+  </header>
+
+  <main class="canvas">
+
+    <!-- ============ Decode a text ============ -->
+    <section class="screen" id="screen-decode" aria-labelledby="decodeTitle">
+      <div class="title-row">
+        <div>
+          <h1 id="decodeTitle" class="screen-title">Decode a text</h1>
+          <p class="finding" id="decodeFinding">Paste what they sent. Subtext reads the words, the emoji and how it was typed.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <form class="card span-6 composer" id="decodeForm">
+          <label class="field-block" for="theirText"><span class="label">What did they send?</span></label>
+          <textarea id="theirText" rows="1" spellcheck="false" autocomplete="off" placeholder="paste their text, e.g. lowkey deleted my hinge lol" aria-describedby="decodeError"></textarea>
+          <p class="field-error" id="decodeError" role="alert" hidden>Paste one of their texts first, then press Decode.</p>
+          <div class="composer-row">
+            <label class="field-inline"><span class="label">Your text before it</span>
+              <input id="yourText" autocomplete="off" placeholder="optional">
+            </label>
+            <label class="field-inline narrow"><span class="label">They replied</span>
+              <select id="delay">
+                <option value="">Not sure when</option><option value="fast">Within minutes</option><option value="normal">Within the hour</option>
+                <option value="slow">Hours later</option><option value="day">A day or more later</option>
+              </select>
+            </label>
+            <label class="field-inline narrow"><span class="label">Where you're at</span><select id="stage"></select></label>
+            <button type="button" class="btn secondary" id="clipBtn" hidden>Paste from clipboard</button>
+            <button type="submit" class="btn primary">Decode</button>
+          </div>
+          <p class="kbd-hint" id="kbdHint">Enter decodes · Shift + Enter adds a line · paste or drop a whole chat or a screenshot anywhere on the page</p>
+          <div class="tries" id="tries" aria-label="Example texts"></div>
+        </form>
+
+        <div class="span-6 reading" id="reading" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ Read a whole chat ============ -->
+    <section class="screen" id="screen-chat" aria-labelledby="chatTitle" hidden>
+      <div class="title-row">
+        <div>
+          <h2 id="chatTitle" class="screen-title">Read a whole chat</h2>
+          <p class="finding" id="chatFinding">Open an export from Instagram, TikTok, Snapchat, WhatsApp or your phone's texts, add screenshots, paste a chat, or start with a demo.</p>
+        </div>
+        <div class="title-actions">
+          <div class="segmented" id="demoPick" role="group" aria-label="Demo chats"></div>
+          <label class="btn secondary file-btn">Open chats or screenshots<input type="file" id="chatFile" accept=".txt,.csv,.json,.xml,image/*" multiple hidden></label>
+          <label class="btn secondary file-btn">Open an export folder<input type="file" id="chatFolder" webkitdirectory multiple hidden></label>
+          <button type="button" class="btn secondary" id="pasteToggle" aria-expanded="false" aria-controls="pasteBox">Paste a chat</button>
+          <button type="button" class="btn secondary" id="guideToggle" aria-expanded="false" aria-controls="getGuide">How to get your chats</button>
+        </div>
+      </div>
+
+      <section class="card howto" id="getGuide" hidden aria-labelledby="getGuideTitle">
+        <div class="card-head"><h2 id="getGuideTitle">How to get your chats</h2><span class="meta">Each app's own download. Open the file here; it never leaves this device.</span></div>
+        <dl class="howto-list">
+          <dt>Share from any app<small>quickest, on your phone</small></dt>
+          <dd><b>Android:</b> install Subtext (Chrome → ⋮ → <b>Install app</b>) and open it once. Then select a message, a screenshot or WhatsApp's <b>Export chat</b> file in any app → Share → <b>Subtext</b>.
+            <b>iPhone:</b> add it to your home screen (Safari → Share → <b>Add to Home Screen</b>), copy a message or a screenshot, and tap <b>Paste from clipboard</b>. For a share-menu button, set up the <a href="https://github.com/yesjermo/subtext-analysis-simulator/blob/main/docs/PHONE.md" target="_blank" rel="noopener">Decode with Subtext shortcut</a>.</dd>
+          <dt>Instagram<small>also Facebook Messenger</small></dt>
+          <dd>Settings → Accounts Center → Your information and permissions → Download your information. Pick <b>Messages</b> and format <b>JSON</b>. When it arrives, unzip it and open the person's folder in <code>your_instagram_activity/messages/inbox/</code> with <b>Open an export folder</b>, or just its <code>message_1.json</code>.</dd>
+          <dt>TikTok</dt>
+          <dd>Profile → Settings and privacy → Account → Download your data. Choose <b>JSON</b> and include direct messages. Open <code>user_data_tiktok.json</code>; every DM thread inside is listed to pick from.</dd>
+          <dt>Snapchat</dt>
+          <dd>accounts.snapchat.com → My Data. Tick <b>Chat History</b> and turn on <b>Export JSON files</b>. Open <code>json/chat_history.json</code>. Snapchat only keeps chats that were saved or not yet opened.</dd>
+          <dt>WhatsApp</dt>
+          <dd>Open the chat → their name → <b>Export chat</b> → Without media. Open the <code>.txt</code> (unzip it first if it arrives as a .zip).</dd>
+          <dt>Texts on Android</dt>
+          <dd>Install <b>SMS Backup &amp; Restore</b>, back up your messages, and open the <code>.xml</code> it makes. Every contact is listed to pick from.</dd>
+          <dt>iMessage<small>and SMS on iPhone</small></dt>
+          <dd>Apple has no export. On a Mac with Messages in iCloud, run <code>python3 get_chat.py imessage --list</code>, then <code>--chat &lt;number&gt; --them &lt;name&gt; --out chat.csv</code>, and open the .csv here. No Mac: use screenshots.</dd>
+          <dt>Hinge, Tinder, Bumble, Discord</dt>
+          <dd>Their downloads only include <b>your</b> messages, so use <b>screenshots</b>: take them oldest first, with their bubbles on the left and yours on the right, and open them all at once. Check the words it read before decoding.</dd>
+        </dl>
+      </section>
+
+      <form class="card paste" id="pasteBox" hidden>
+        <label for="chatPaste" class="label" id="pasteLabel">One message per line, as "Name: text" or a WhatsApp export</label>
+        <textarea id="chatPaste" rows="7" spellcheck="false" placeholder="Jay: heyyy&#10;Me: hiii how was your day&#10;Jay: so good!! got the internship 😭"></textarea> <!-- taste-skill-ignore: an emoji you can look up / paste, it is the content -->
+        <div class="composer-row"><button type="submit" class="btn primary">Read this chat</button></div>
+      </form>
+
+      <div class="grid" id="chatBody" aria-live="polite"></div>
+    </section>
+
+    <!-- ============ Slang library ============ -->
+    <section class="screen" id="screen-library" aria-labelledby="libTitle" hidden>
+      <div class="title-row">
+        <div>
+          <h2 id="libTitle" class="screen-title">Slang library</h2>
+          <p class="finding" id="libFinding"></p>
+        </div>
+        <div class="title-actions">
+          <div class="segmented" id="libKind" role="group" aria-label="What to list">
+            <button type="button" data-kind="words" aria-pressed="true">Words</button>
+            <button type="button" data-kind="emoji" aria-pressed="false">Emoji</button>
+            <button type="button" data-kind="phrases" aria-pressed="false">Phrases</button>
+          </div>
+        </div>
+      </div>
+      <div class="card span-6 lib">
+        <div class="lib-tools">
+          <input id="libSearch" type="search" placeholder="Search meanings too: 'laughing', 'friend-zone'" aria-label="Search the library" autocomplete="off">
+          <select id="libOrigin" aria-label="Where the word comes from"></select>
+          <span class="count" id="libCount"></span>
+        </div>
+        <table class="table" id="libTable"></table>
+        <div class="empty" id="libEmpty" hidden>
+          <p id="libEmptyText"></p>
+          <button type="button" class="btn secondary" id="libClear">Clear the search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Stages and apps ============ -->
+    <section class="screen" id="screen-guide" aria-labelledby="guideTitle" hidden>
+      <div class="title-row">
+        <div>
+          <h2 id="guideTitle" class="screen-title">Stages and apps</h2>
+          <p class="finding">Where a talking stage can go, what to do in each stage, and what each app's habits mean.</p>
+        </div>
+      </div>
+      <div class="grid" id="guideBody"></div>
+    </section>
+  </main>
+
+  <!-- Shown while a file is dragged over the page -->
+  <div class="drop-veil" id="dropVeil" hidden aria-hidden="true">
+    <p><b>Drop to read it</b>Chat exports, screenshots, or a copied chat</p>
+  </div>
+
+  <!-- Phone: the four screens along the bottom -->
+  <nav class="tabbar" aria-label="Screens">
+    <a href="#decode" data-screen="decode">Decode</a>
+    <a href="#chat" data-screen="chat">Chat</a>
+    <a href="#library" data-screen="library">Library</a>
+    <a href="#guide" data-screen="guide">Stages</a>
+  </nav>
+</div>
+
+<script src="data.js"></script>
+<script src="parse.js"></script>
+<script src="engine.js"></script>
+<script src="importers.js"></script>
+<script src="screenshots.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

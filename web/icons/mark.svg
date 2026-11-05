@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Subtext's mark: a sent-message bubble (the app's one data colour) with three typing dots. -->
+  <rect width="512" height="512" fill="#000000"/>
+  <g transform="translate(0 14)"><path d="M120 150a52 52 0 0 1 52-52h168a52 52 0 0 1 52 52v120a52 52 0 0 1-52 52H236l-76 66v-66h-8a32 32 0 0 1-32-32z" fill="#4cb3f0"/>
+  <circle cx="196" cy="210" r="22" fill="#000000"/>
+  <circle cx="256" cy="210" r="22" fill="#000000"/>
+  <circle cx="316" cy="210" r="22" fill="#000000"/></g>
+</svg>
