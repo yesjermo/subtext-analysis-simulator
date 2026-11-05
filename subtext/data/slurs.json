@@ -1,0 +1,143 @@
+{
+ "_comment": "Flagged language: slurs by group, stored ROT13-scrambled so they don't show up in the slang library, search results or code review. Both engines unscramble them in memory, and catch spellings like '@' for 'a', '*' in place of a vowel, repeated letters and spaced-out letters. 'when_joking' says what happens when the message has a laugh, 'jk' or a laughing emoji: 'ignore' (friends saying it to each other) or 'note' (a softer, yellow flag instead of red). 'phrases' are plain patterns (not slurs) that count the same way. Left out on purpose: the n-word ending in '-a' (widely used casually within Black communities and in Gen Z texting) and 'dyke' (reclaimed, and a sea wall), 'queer' (reclaimed), 'cracker', 'nip', 'slant' and 'kaffir' (everyday words or foods). To add a word: python3 -c \"import codecs; print(codecs.encode('word', 'rot13'))\", add it to a group, then run python3 tools/build_web.py.",
+ "order": [
+  "racial",
+  "anti_lgbtq",
+  "sexist",
+  "ableist"
+ ],
+ "groups": {
+  "racial": {
+   "label": "racial",
+   "title": "Racial",
+   "when_joking": "note",
+   "words": [
+    "avttre",
+    "fnaqavttre",
+    "puvax",
+    "puvanzna",
+    "puvat pubat",
+    "tbbx",
+    "mvccreurnq",
+    "wnc",
+    "fcvp",
+    "fcvpx",
+    "jrgonpx",
+    "ornare",
+    "xvxr",
+    "ulzvr",
+    "urro",
+    "lvq",
+    "gbjryurnq",
+    "enturnq",
+    "pnzry wbpxrl",
+    "fnaq zbaxrl",
+    "qbgurnq",
+    "pheel zhapure",
+    "cnxv",
+    "pbba",
+    "wvtnobb",
+    "qnexvr",
+    "fnzob",
+    "cvpxnavaal",
+    "tbyyvjbt",
+    "whatyr ohaal",
+    "cbepu zbaxrl",
+    "gne onol",
+    "hapyr gbz",
+    "erqfxva",
+    "vawha",
+    "jbc",
+    "qntb",
+    "xenhg",
+    "tlccb",
+    "cvxrl",
+    "nob",
+    "obbat",
+    "ubaxl",
+    "jvttre",
+    "unysoerrq",
+    "unys oerrq"
+   ]
+  },
+  "anti_lgbtq": {
+   "label": "anti-LGBTQ",
+   "title": "Anti-LGBTQ",
+   "when_joking": "note",
+   "words": [
+    "snttbg",
+    "snt",
+    "genaal",
+    "genaavrf",
+    "furznyr",
+    "gebba",
+    "yrfob",
+    "ubzb",
+    "cbbs",
+    "cbbsgre",
+    "onggl obl"
+   ]
+  },
+  "sexist": {
+   "label": "sexist",
+   "title": "Sexist",
+   "when_joking": "ignore",
+   "words": [
+    "ovgpu",
+    "fyhg",
+    "juber",
+    "ubr",
+    "fxnax",
+    "gubg",
+    "phag",
+    "fynt",
+    "gjng",
+    "srzbvq",
+    "ebnfgvr",
+    "tbyq qvttre"
+   ],
+   "phrases": [
+    "\\b(get|go|stay|back) (back )?(in|to|into) (the|ur|your) kitchen\\b",
+    "\\bmake me a sandwich\\b",
+    "\\bwomen (are|r) (only )?(good for|meant (to|for)|supposed to)\\b",
+    "\\b(that'?s|thats|it'?s|its) (a|an) (woman|female|girl)'?s? (job|thing)\\b"
+   ]
+  },
+  "ableist": {
+   "label": "ableist",
+   "title": "Ableist",
+   "when_joking": "note",
+   "words": [
+    "ergneq",
+    "gneq",
+    "fcnm",
+    "fcnfgvp",
+    "zbatbybvq",
+    "jvaqbj yvpxre"
+   ]
+  }
+ },
+ "messages": {
+  "aimed": {
+   "label": "{title} slur aimed at you",
+   "implication": "A slur used against you. That's hate, and every app lets you report it.",
+   "feeling": "hateful",
+   "tone": "hostile",
+   "interest": -3
+  },
+  "used": {
+   "label": "Flagged language: {label}",
+   "implication": "They used {label} language, even if not at you. Worth noticing how they talk about other people.",
+   "feeling": "careless or hateful",
+   "tone": "negative",
+   "interest": -1
+  },
+  "joking": {
+   "label": "Flagged language: {label} (as a joke)",
+   "implication": "A {label} slur said as a joke. Not aimed at hurting you, but it shows what they find funny.",
+   "feeling": "careless",
+   "tone": "negative",
+   "interest": -1
+  }
+ }
+}
