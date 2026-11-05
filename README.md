@@ -1,4 +1,4 @@
-<h1 align="center">Subtext</h1>
+<h1 align="center">Subtext (subtext. analysis simulator)</h1>
 
 <p align="center"><b>Read what their text really means, and what to text back.</b></p>
 
