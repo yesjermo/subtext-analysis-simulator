@@ -3,7 +3,7 @@
 <p align="center"><b>Read what their text really means, and what to text back.</b></p>
 
 <p align="center">
-  <img alt="tests: 12/12 passing" src="https://img.shields.io/badge/tests-12%2F12%20passing-2ea44f">
+  <img alt="tests: 29/29 passing" src="https://img.shields.io/badge/tests-29%2F29%20passing-2ea44f">
   <img alt="held-out accuracy: 31/32" src="https://img.shields.io/badge/held--out%20accuracy-31%2F32-2ea44f">
   <img alt="Python 3.10+, standard library only" src="https://img.shields.io/badge/Python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB?logo=python&logoColor=white">
   <img alt="JavaScript, no build step" src="https://img.shields.io/badge/JavaScript-no%20build%20step-F7DF1E?logo=javascript&logoColor=black">
@@ -66,12 +66,54 @@ Then open http://127.0.0.1:8790. The four screens:
 | Screen | What it's for |
 |---|---|
 | **Decode a text** | One text, with each slang word and emoji underlined and decoded where it sits |
-| **Read a whole chat** | Open a WhatsApp, iMessage/SMS CSV or Telegram JSON export, paste a chat, or try the two demo chats |
+| **Read a whole chat** | Open an Instagram, TikTok, Snapchat, WhatsApp or Android SMS export, screenshots, or an iMessage CSV; paste a chat; or try the two demo chats |
 | **Slang library** | Every word, emoji and phrase Subtext knows, searchable by spelling or meaning |
 | **Stages and apps** | What each stage looks like, what to do, the ghosting signs, and what each app's habits mean |
 
 Pick the app you're talking on in the top bar (Snapchat, Instagram, TikTok, iMessage, WhatsApp,
 dating apps, Discord) and every reading adds that app's norms.
+
+## Bring a chat in
+
+- **Paste anywhere.** Copy their text, a whole chat, or a screenshot, then press ⌘V / Ctrl+V anywhere
+  on the page. One text is decoded; a chat with two people goes to *Read a whole chat*; a screenshot
+  is read and shown for you to check.
+- **Drop anywhere.** Drag an export file, several screenshots, or selected text onto the page.
+- **Paste from clipboard.** One tap on a phone, where there's no keyboard shortcut.
+- **Links.** `web/#decode?t=wyd` opens with that text already decoded; `#chat?chat=` and
+  `#library?q=` work the same way. The text stays in the browser and is cleared from the address bar.
+  This is what the share-sheet shortcuts in [docs/PUBLISHING.md](docs/PUBLISHING.md) will use.
+
+To put Subtext online with GitHub Pages and add it to your phone's share menu, see
+[docs/PUBLISHING.md](docs/PUBLISHING.md).
+
+## Get your chats
+
+None of these apps lets another app read your DMs (their APIs are for business accounts and bots),
+so Subtext reads the copy of your data each app lets you download. You download it, you open it
+here, and it never leaves your device.
+
+| App | How | Open in Subtext |
+|---|---|---|
+| Instagram, Facebook Messenger | Accounts Center → Your information and permissions → Download your information → Messages, **JSON** | the person's folder in `messages/inbox/`, or its `message_1.json` |
+| TikTok | Settings and privacy → Account → Download your data → **JSON** | `user_data_tiktok.json` (pick a thread) |
+| Snapchat | accounts.snapchat.com → My Data → Chat History, **Export JSON files** on | `json/chat_history.json` (saved and unopened chats only) |
+| WhatsApp | the chat → their name → Export chat → Without media | the `.txt` |
+| Android texts | the SMS Backup & Restore app | the `.xml` (pick a contact) |
+| iMessage, iPhone texts | on a Mac: `python3 get_chat.py imessage --list` (needs Full Disk Access) | the `.csv` it writes |
+| Hinge, Tinder, Bumble, Discord | their downloads hold only *your* messages, so take screenshots | the screenshots, oldest first |
+
+Screenshots are read on your device: in the browser with Tesseract.js (downloaded once from a CDN),
+or on the command line with Apple Vision on a Mac or `tesseract`. Their bubbles on the left, yours on
+the right, light or dark mode. Check the words it read before decoding; it can misread a few letters.
+
+```bash
+python3 get_chat.py list ~/Downloads/instagram-export                       # every conversation inside
+python3 get_chat.py export ~/Downloads/instagram-export --chat "Sam" --out sam.csv
+python3 get_chat.py imessage --list
+python3 get_chat.py imessage --chat 12 --them Jordan --out jordan.csv
+python3 get_chat.py screenshots ~/Desktop/hinge-shots --them Alex --out alex.txt
+```
 
 ## Command line
 
@@ -82,6 +124,7 @@ python3 cli.py "lowkey deleted my hinge lol"
 python3 cli.py "k." --after "omg how was the concert?? tell me everything" --delay 600
 python3 cli.py "u up?" --platform snapchat
 python3 cli.py --file examples/jay.txt --them Jay
+python3 cli.py --file examples/exports/tiktok/user_data_tiktok.json --chat jaylen
 python3 cli.py --eval
 ```
 
@@ -120,23 +163,31 @@ shows its reasons, not mind reading; when it matters, ask the person.
 
 ```
 subtext/decoder.py      the engine: one text, or a whole chat
-subtext/chat_parser.py  chat exports → messages
+subtext/chat_parser.py  WhatsApp, "Name: text", CSV and JSON chats → messages
+subtext/importers.py    Instagram, TikTok, Snapchat and SMS Backup exports → conversations
+subtext/imessage.py     iMessage and SMS from the Messages database on a Mac
+subtext/screenshots.py  chat screenshots → messages (Apple Vision or tesseract)
 subtext/data/           slang, emoji, signals, playbook, labelled examples
-cli.py                  command line
+cli.py                  command line: decode a text or a chat
+get_chat.py             command line: get a conversation out of an export, iMessage or screenshots
 web/index.html          the app (open it directly)
 web/app.js, app.css     the four screens
 web/engine.js           the same engine in JavaScript
 web/parse.js            the same chat parser in JavaScript
+web/importers.js        the same importers in JavaScript
+web/screenshots.js      reads screenshots in the browser (Tesseract.js)
 web/charts.js           small SVG charts
 web/data.js             generated by tools/build_web.py; don't edit by hand
-docs/                   screenshots used in this README
-examples/               two demo chats (fictional)
+docs/                   PUBLISHING.md (putting it online) and the screenshots used in this README
+index.html              forwards the repository's home address to web/ (for GitHub Pages)
+examples/               two demo chats, and a sample export from each app in exports/ (all fictional)
 tests/                  python3 -m unittest discover tests
 ```
 
 After changing anything in `subtext/data/` or `examples/`, run `python3 tools/build_web.py`. The
-tests include a check that the Python and JavaScript engines give the same reading for every example
-and demo chat (it needs Node).
+tests check that the Python and JavaScript sides give the same reading for every example and demo
+chat, and read every sample export the same way (both need Node). The screenshot test runs only where
+an OCR engine is installed.
 
 ## Credits
 
