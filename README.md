@@ -9,8 +9,6 @@
   <img alt="JavaScript, no build step" src="https://img.shields.io/badge/JavaScript-no%20build%20step-F7DF1E?logo=javascript&logoColor=black">
   <img alt="dependencies: none" src="https://img.shields.io/badge/dependencies-none-2ea44f">
   <br>
-  <img alt="slang: 343 words, 94 emoji, 63 phrases" src="https://img.shields.io/badge/slang%20library-343%20words%20%C2%B7%2094%20emoji%20%C2%B7%2063%20phrases-4cb3f0">
-  <img alt="apps: Snapchat, Instagram, TikTok, iMessage, WhatsApp, dating apps, Discord" src="https://img.shields.io/badge/reads-Snap%20%C2%B7%20IG%20%C2%B7%20TikTok%20%C2%B7%20iMessage%20%C2%B7%20WhatsApp%20%C2%B7%20Hinge%20%C2%B7%20Discord-4cb3f0">
   <img alt="privacy: runs in your browser, nothing uploaded" src="https://img.shields.io/badge/privacy-nothing%20uploaded-111111">
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2ea44f">
 </p>
