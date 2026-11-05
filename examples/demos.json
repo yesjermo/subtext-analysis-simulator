@@ -1,0 +1,18 @@
+[
+  {
+    "id": "maya",
+    "name": "Maya",
+    "about": "talking stage going well",
+    "file": "examples/maya.txt",
+    "them": "Maya",
+    "me": "Me"
+  },
+  {
+    "id": "jay",
+    "name": "Jay",
+    "about": "starting to fade",
+    "file": "examples/jay.txt",
+    "them": "Jay",
+    "me": "Me"
+  }
+]

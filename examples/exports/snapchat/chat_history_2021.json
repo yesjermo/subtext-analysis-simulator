@@ -1,0 +1,24 @@
+{
+  "Received Saved Chat History": [
+    {
+      "From": "alexrivera",
+      "Media Type": "TEXT",
+      "Created": "2026-02-26 22:10:00 UTC",
+      "Text": "hey stranger"
+    },
+    {
+      "From": "alexrivera",
+      "Media Type": "TEXT",
+      "Created": "2026-02-26 22:17:00 UTC",
+      "Text": "been a minute huh"
+    }
+  ],
+  "Sent Saved Chat History": [
+    {
+      "To": "alexrivera",
+      "Media Type": "TEXT",
+      "Created": "2026-02-26 22:15:00 UTC",
+      "Text": "omg hiii"
+    }
+  ]
+}

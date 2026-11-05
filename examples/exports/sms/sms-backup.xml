@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smses count="6" backup_set="b1" backup_date="1775424000000" type="full">
+  <sms protocol="0" address="+15551230001" date="1775412000000" type="1" subject="null" body="are u free friday?" toa="null" sc_toa="null" service_center="null" read="1" status="-1" locked="0" date_sent="0" sub_id="-1" readable_date="" contact_name="Jordan" />
+  <sms protocol="0" address="+15551230001" date="1775412720000" type="2" subject="null" body="yes!! what were u thinking" toa="null" sc_toa="null" service_center="null" read="1" status="-1" locked="0" date_sent="0" sub_id="-1" readable_date="" contact_name="Jordan" />
+  <sms protocol="0" address="+15551230001" date="1775412900000" type="1" subject="null" body="that thai place on 5th? &amp; then a movie" toa="null" sc_toa="null" service_center="null" read="1" status="-1" locked="0" date_sent="0" sub_id="-1" readable_date="" contact_name="Jordan" />
+  <mms date="1775412960000" msg_box="1" address="+15551230001" contact_name="Jordan" readable_date="">
+    <parts>
+      <part seq="-1" ct="application/smil" text="null" />
+      <part seq="0" ct="text/plain" text="lmk &#55357;&#56898;" />
+    </parts>
+    <addrs>
+      <addr address="+15551230001" type="137" charset="106" />
+    </addrs>
+  </mms>
+  <sms protocol="0" address="+15551230001" date="1775414400000" type="2" subject="null" body="perfect, see u there" toa="null" sc_toa="null" service_center="null" read="1" status="-1" locked="0" date_sent="0" sub_id="-1" readable_date="" contact_name="Jordan" />
+  <sms protocol="0" address="+15551239999" date="1775417400000" type="1" subject="null" body="Call me when you can." toa="null" sc_toa="null" service_center="null" read="1" status="-1" locked="0" date_sent="0" sub_id="-1" readable_date="" contact_name="Mom" />
+</smses>

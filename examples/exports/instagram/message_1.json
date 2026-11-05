@@ -1,0 +1,115 @@
+{
+  "participants": [
+    {
+      "name": "Sam Chen"
+    },
+    {
+      "name": "Riley Park"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775867280000,
+      "is_geoblocked_for_viewer": false,
+      "content": "yesss what time"
+    },
+    {
+      "sender_name": "Sam Chen",
+      "timestamp_ms": 1775867220000,
+      "is_geoblocked_for_viewer": false,
+      "content": "wanna get matcha saturday?"
+    },
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775867100000,
+      "is_geoblocked_for_viewer": false,
+      "content": "nothing planned yet hbu"
+    },
+    {
+      "sender_name": "Sam Chen",
+      "timestamp_ms": 1775865900000,
+      "is_geoblocked_for_viewer": false,
+      "content": "wyd this weekend? \u00f0\u009f\u0091\u0080"
+    },
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775858820000,
+      "is_geoblocked_for_viewer": false,
+      "content": "Riley Park sent an attachment."
+    },
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775858760000,
+      "is_geoblocked_for_viewer": false,
+      "photos": [
+        {
+          "uri": "your_instagram_activity/messages/inbox/samchen_1203/photos/1.jpg",
+          "creation_timestamp": 0
+        }
+      ]
+    },
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775858700000,
+      "is_geoblocked_for_viewer": false,
+      "content": "LMAO literally"
+    },
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775857680000,
+      "is_geoblocked_for_viewer": false,
+      "content": "Liked a message"
+    },
+    {
+      "sender_name": "Sam Chen",
+      "timestamp_ms": 1775857620000,
+      "is_geoblocked_for_viewer": false,
+      "content": "this is so us"
+    },
+    {
+      "sender_name": "Sam Chen",
+      "timestamp_ms": 1775857560000,
+      "is_geoblocked_for_viewer": false,
+      "share": {
+        "link": "https://www.instagram.com/reel/C9xYz12AbCd/",
+        "share_text": "",
+        "original_content_owner": "concertclips"
+      }
+    },
+    {
+      "sender_name": "Sam Chen",
+      "timestamp_ms": 1775857500000,
+      "is_geoblocked_for_viewer": false,
+      "content": "just my roommates"
+    },
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775855640000,
+      "is_geoblocked_for_viewer": false,
+      "content": "next time fr. who'd u go with"
+    },
+    {
+      "sender_name": "Sam Chen",
+      "timestamp_ms": 1775855340000,
+      "is_geoblocked_for_viewer": false,
+      "content": "u should've come!!"
+    },
+    {
+      "sender_name": "Sam Chen",
+      "timestamp_ms": 1775855280000,
+      "is_geoblocked_for_viewer": false,
+      "content": "it was insane"
+    },
+    {
+      "sender_name": "Riley Park",
+      "timestamp_ms": 1775855100000,
+      "is_geoblocked_for_viewer": false,
+      "content": "omg ur story from the concert \u00f0\u009f\u0098\u00ad"
+    }
+  ],
+  "title": "Sam Chen",
+  "is_still_participant": true,
+  "thread_path": "inbox/samchen_1203",
+  "magic_words": []
+}

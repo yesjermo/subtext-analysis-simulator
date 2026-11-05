@@ -1,0 +1,58 @@
+{
+  "alexrivera": [
+    {
+      "From": "alexrivera",
+      "Media Type": "TEXT",
+      "Created": "2026-03-28 22:10:00 UTC",
+      "Content": "u up?",
+      "Conversation Title": null,
+      "IsSender": false,
+      "Created(microseconds)": 1774735800000000
+    },
+    {
+      "From": "riley.prk",
+      "Media Type": "TEXT",
+      "Created": "2026-03-28 22:14:00 UTC",
+      "Content": "yeah wyd",
+      "Conversation Title": null,
+      "IsSender": true,
+      "Created(microseconds)": 1774736040000000
+    },
+    {
+      "From": "alexrivera",
+      "Media Type": "MEDIA",
+      "Created": "2026-03-28 22:15:00 UTC",
+      "Content": "",
+      "Conversation Title": null,
+      "IsSender": false,
+      "Created(microseconds)": 1774736100000000
+    },
+    {
+      "From": "alexrivera",
+      "Media Type": "TEXT",
+      "Created": "2026-03-28 22:16:00 UTC",
+      "Content": "come over? movie night 😏",
+      "Conversation Title": null,
+      "IsSender": false,
+      "Created(microseconds)": 1774736160000000
+    },
+    {
+      "From": "riley.prk",
+      "Media Type": "TEXT",
+      "Created": "2026-03-28 22:19:00 UTC",
+      "Content": "maybe another time",
+      "Conversation Title": null,
+      "IsSender": true,
+      "Created(microseconds)": 1774736340000000
+    },
+    {
+      "From": "alexrivera",
+      "Media Type": "TEXT",
+      "Created": "2026-03-28 22:21:00 UTC",
+      "Content": "k",
+      "Conversation Title": null,
+      "IsSender": false,
+      "Created(microseconds)": 1774736460000000
+    }
+  ]
+}

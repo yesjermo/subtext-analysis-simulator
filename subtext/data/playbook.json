@@ -1,0 +1,911 @@
+{
+ "_comment": "How to answer each kind of text. 'order' decides which category leads when a text matches several (first wins). Each category: name, goal, approach, replies {match, playful, sincere} (lowercase on purpose, Gen Z texts lowercase), avoid. Stages and platforms add stage- and app-specific advice. All replies are suggestions to adapt, not scripts.",
+ "order": [
+  "distress",
+  "red_flag_pressure",
+  "boundary",
+  "dtr",
+  "exclusivity_probe",
+  "physical_escalation",
+  "love_bombing",
+  "invite",
+  "soft_rejection",
+  "jealousy_test",
+  "vulnerable",
+  "compliment",
+  "soft_launch_care",
+  "flirt_tease",
+  "apology_late",
+  "reengage",
+  "meme_share",
+  "question_back",
+  "enthusiastic",
+  "closing",
+  "checkin",
+  "dry",
+  "statement"
+ ],
+ "categories": {
+  "distress": {
+   "name": "Possible crisis",
+   "goal": "Make sure they're safe. Dating strategy doesn't matter here.",
+   "approach": "Ask directly and kindly whether they're okay. Don't joke it off. If they might be in danger, encourage them to reach out to someone now (in the US you can call or text 988; elsewhere, local emergency or crisis lines).",
+   "replies": {
+    "match": [
+     "hey, i want to check, are you okay for real?"
+    ],
+    "playful": [
+     "not ignoring the joke but i'm gonna ask seriously. you good?"
+    ],
+    "sincere": [
+     "i care about you and that worried me. are you safe right now? i'm here and i'm not going anywhere",
+     "if it's heavy right now you can call or text 988 (us), i can stay on the phone with you while you do"
+    ]
+   },
+   "avoid": [
+    "Ignoring it or replying 'lol'",
+    "Making it about the relationship",
+    "Promising to keep it secret if they're in danger"
+   ]
+  },
+  "red_flag_pressure": {
+   "name": "Pressure or control",
+   "goal": "Hold your boundary and see how they handle it.",
+   "approach": "You don't have to explain or bargain. State your line once, calmly. Someone worth keeping respects it the first time. If the pressure continues, that's your answer, and leaving is not 'ghosting'.",
+   "replies": {
+    "match": [
+     "nah i'm good",
+     "not doing that"
+    ],
+    "playful": [
+     "guilt-tripping is not the rizz you think it is"
+    ],
+    "sincere": [
+     "i said no and i need that to be enough. if it's not, we're not a match",
+     "i'm not okay with being pushed on this. let's drop it"
+    ]
+   },
+   "avoid": [
+    "Over-explaining or apologising for your boundary",
+    "Giving in to keep them happy",
+    "Sending location, pictures or passwords because they insist"
+   ]
+  },
+  "boundary": {
+   "name": "They set a boundary",
+   "goal": "Make them feel safe. Respecting a limit is the most attractive thing you can do.",
+   "approach": "Acknowledge it right away, without sulking or asking 'why'. Then keep the warmth going so they know the interest didn't depend on it.",
+   "replies": {
+    "match": [
+     "of course, no rush at all",
+     "totally get it"
+    ],
+    "playful": [
+     "say less. i'm still gonna be annoying in your texts tho"
+    ],
+    "sincere": [
+     "thank you for telling me. we go at whatever pace feels good for you",
+     "i'm into you either way, no pressure from me"
+    ]
+   },
+   "avoid": [
+    "Asking 'why not?' or bargaining",
+    "Going cold or dry right after",
+    "Joking about it in a way that makes them feel bad"
+   ]
+  },
+  "dtr": {
+   "name": "Defining the relationship",
+   "goal": "Give a clear answer. Ambiguity here is what turns talking stages into situationships or ghosting.",
+   "approach": "If you feel the same, say so plainly, and suggest saying it properly in person. If you don't, be kind and honest now; dragging it out hurts more. Don't answer a heavy DTR text with only a joke.",
+   "replies": {
+    "match": [
+     "honestly same",
+     "i'm not talking to anyone else either"
+    ],
+    "playful": [
+     "locked in. no take backs",
+     "i was literally waiting for you to say that 😭"
+    ],
+    "sincere": [
+     "i really like you and i want this to be a thing. can we talk about it properly when i see you?",
+     "i've been feeling the same. i'm all in if you are"
+    ]
+   },
+   "avoid": [
+    "'haha we'll see' (reads as no)",
+    "Leaving it on read to 'think'",
+    "Saying yes if you mean maybe"
+   ],
+   "if_not_interested": "i really like talking to you, but i'm not in the same place and i don't want to lead you on"
+  },
+  "exclusivity_probe": {
+   "name": "Testing the waters",
+   "goal": "Answer the real question underneath: 'am I the only one?'",
+   "approach": "Match their move with a small reveal of your own. If they deleted the apps, say whether you did too. If their friends ask about you, show you're happy about it.",
+   "replies": {
+    "match": [
+     "wait same, i deleted mine last week",
+     "no one else, just you"
+    ],
+    "playful": [
+     "tell them i'm amazing obviously",
+     "only busy with you lol"
+    ],
+    "sincere": [
+     "honestly i'm not really talking to anyone else. i like where this is going",
+     "i'd love to meet them"
+    ]
+   },
+   "avoid": [
+    "Ignoring the hint and changing topic",
+    "Bragging about other options to seem in demand",
+    "A dry 'lol nice'"
+   ]
+  },
+  "physical_escalation": {
+   "name": "Getting physical (second base)",
+   "goal": "Move at a pace you both actually want, with consent that is clear, enthusiastic and ongoing.",
+   "approach": "If you're into it, say so and suggest a plan that's comfortable (a movie, cooking, a walk back to theirs). If you're not, a kind no or 'not yet' is enough. In person, check in ('is this okay?') rather than assuming. Agreeing to come over isn't agreeing to anything else, for either of you. Never send pictures you wouldn't be okay with being shared.",
+   "replies": {
+    "match": [
+     "i'd like that",
+     "come over around 8? we can watch something"
+    ],
+    "playful": [
+     "only if i get to pick the movie",
+     "you're dangerous 😏 but yes"
+    ],
+    "sincere": [
+     "i'm really into you. i'd love to hang at yours, no pressure on anything",
+     "honestly i'd rather take it slow, but i still want to see you. dinner first?"
+    ]
+   },
+   "avoid": [
+    "Pushing after a 'not yet'",
+    "Treating 'come over' as a promise of anything",
+    "Sending or asking for nudes (risky, and illegal if anyone is under 18)",
+    "Going cold the day after getting physical; that's the #1 reason people feel used"
+   ],
+   "after_tip": "The day after hooking up or a first kiss, text first. Something like 'had so much fun last night' prevents the 'was that all it was?' spiral."
+  },
+  "love_bombing": {
+   "name": "Very intense, very early",
+   "goal": "Enjoy it without getting swept up. Let actions catch up with words.",
+   "approach": "Respond warmly but at your own pace. Watch for consistency over the next weeks: do plans happen, do they respect your time and your no?",
+   "replies": {
+    "match": [
+     "that's really sweet",
+     "you're making me blush"
+    ],
+    "playful": [
+     "slow down, you haven't even seen me before coffee"
+    ],
+    "sincere": [
+     "i like you too, i just like getting to know someone slowly. let's keep going"
+    ]
+   },
+   "avoid": [
+    "Matching declarations you don't feel yet",
+    "Cutting off friends or plans because they want all your time"
+   ]
+  },
+  "invite": {
+   "name": "They made a plan",
+   "goal": "Lock in the plan. A clear yes with a time is the best thing for a talking stage.",
+   "approach": "Say yes with specifics (day, time, place) or offer a counter-time. 'Maybe' without an alternative feels like rejection.",
+   "replies": {
+    "match": [
+     "yes! when?",
+     "i'm down. saturday work?"
+    ],
+    "playful": [
+     "say less. you're picking the place tho",
+     "only if there's food involved"
+    ],
+    "sincere": [
+     "i'd really like that. how's friday at 7?",
+     "can't do tonight but i really want to. are you free tomorrow?"
+    ]
+   },
+   "avoid": [
+    "'maybe' or 'we'll see' with no counter-date",
+    "Taking hours to answer an invite",
+    "Saying yes then never confirming the time"
+   ]
+  },
+  "soft_rejection": {
+   "name": "Soft no / fading",
+   "goal": "Find out where you stand without chasing.",
+   "approach": "Give them one easy opening to re-engage, then step back. If they want to see you, they'll suggest a time. Don't double-text a soft no. Matching their energy protects your dignity and keeps the door open.",
+   "replies": {
+    "match": [
+     "all good! hope things calm down",
+     "no worries"
+    ],
+    "playful": [
+     "valid. you know where to find me"
+    ],
+    "sincere": [
+     "totally get it. if you want to hang when things settle, let me know",
+     "no pressure at all. i'd like to see you again, but only if you're feeling it too"
+    ]
+   },
+   "avoid": [
+    "Several texts in a row asking what's wrong",
+    "Guilt-tripping ('you always say that')",
+    "Pretending you don't care with a cold 'k'"
+   ]
+  },
+  "jealousy_test": {
+   "name": "A little jealous",
+   "goal": "Reassure without over-explaining.",
+   "approach": "A quick, light explanation plus some attention back to them. Treat it as a sign they care. If it becomes demanding or controlling, see the red-flag advice.",
+   "replies": {
+    "match": [
+     "that's just my friend lol",
+     "nah i was with my roommates"
+    ],
+    "playful": [
+     "are you jealous? 👀 that's cute"
+    ],
+    "sincere": [
+     "she's just a friend. you're the one i'm texting"
+    ]
+   },
+   "avoid": [
+    "Making them more jealous on purpose",
+    "A long defensive paragraph"
+   ]
+  },
+  "vulnerable": {
+   "name": "Opening up",
+   "goal": "Be someone safe to talk to.",
+   "approach": "Lead with care, not solutions. Ask what they need: to vent, a distraction, or a plan. Follow up later ('how are you feeling today?'). This builds more closeness than any flirt.",
+   "replies": {
+    "match": [
+     "that sounds really rough",
+     "i'm sorry, that sucks"
+    ],
+    "playful": [
+     "want me to send you the dumbest tiktoks i have until you laugh"
+    ],
+    "sincere": [
+     "i'm here. do you want to vent or do you want a distraction?",
+     "proud of you for getting through today. want to call?"
+    ]
+   },
+   "avoid": [
+    "Turning it to your own problems",
+    "Jumping to advice they didn't ask for",
+    "A one-word reply"
+   ]
+  },
+  "compliment": {
+   "name": "They complimented you",
+   "goal": "Receive it, enjoy it, and give something back.",
+   "approach": "Don't deflect ('no i'm not'). Accept it with some personality, and compliment back about something specific.",
+   "replies": {
+    "match": [
+     "stoppp 🙈",
+     "you're cuter tho"
+    ],
+    "playful": [
+     "i know 😌 but tell me more",
+     "ok you're making me blush and i'm in public"
+    ],
+    "sincere": [
+     "that genuinely made my day. you're really easy to talk to too"
+    ]
+   },
+   "avoid": [
+    "Deflecting or putting yourself down",
+    "Only 'lol ty'"
+   ]
+  },
+  "flirt_tease": {
+   "name": "Flirting / banter",
+   "goal": "Keep the push-pull going and raise the heat a little.",
+   "approach": "Tease back with confidence; match their energy and add a little. Mix in one sincere line every so often so it doesn't stay surface-level forever.",
+   "replies": {
+    "match": [
+     "you wish 😏",
+     "says you"
+    ],
+    "playful": [
+     "careful, i might actually start liking you",
+     "is this your way of flirting? because it's working"
+    ],
+    "sincere": [
+     "ok but for real i like talking to you"
+    ]
+   },
+   "avoid": [
+    "Getting defensive at a tease",
+    "Over-the-top sexual replies to light flirting",
+    "Dropping a dry 'lol'"
+   ]
+  },
+  "soft_launch_care": {
+   "name": "Getting closer",
+   "goal": "Show the care back. This is the routine-building phase before it gets official.",
+   "approach": "Mirror the routine (gm/gn, 'home safe', sharing things). Use 'we' back. Bring up something specific from your recent chats to show you were listening.",
+   "replies": {
+    "match": [
+     "aww that's sweet",
+     "same honestly"
+    ],
+    "playful": [
+     "you're stuck with me now"
+    ],
+    "sincere": [
+     "honestly the best part of my day is talking to you"
+    ]
+   },
+   "avoid": [
+    "Going dry when they get affectionate",
+    "Pulling back because it's 'too fast' without saying so"
+   ]
+  },
+  "apology_late": {
+   "name": "Sorry for the late reply",
+   "goal": "Make it easy to pick the conversation back up.",
+   "approach": "Brush it off lightly, don't keep score, and give them something to answer.",
+   "replies": {
+    "match": [
+     "no worries! how was your day?",
+     "all good lol"
+    ],
+    "playful": [
+     "i'll allow it. this time"
+    ],
+    "sincere": [
+     "don't stress, life happens. how are you doing?"
+    ]
+   },
+   "avoid": [
+    "Passive-aggressive 'it's fine 🙂'",
+    "Making them wait the same amount of time on purpose"
+   ]
+  },
+  "reengage": {
+   "name": "Back after a silence",
+   "goal": "Find out if they're back for real before you invest again.",
+   "approach": "Be friendly but don't pick up at full intensity. If they ghosted before, you can name it lightly. Real interest shows up as a plan or consistent texting, not one 'hey stranger'.",
+   "replies": {
+    "match": [
+     "hey! long time. how've you been?"
+    ],
+    "playful": [
+     "oh so you DO remember my number"
+    ],
+    "sincere": [
+     "good to hear from you. honestly i was a bit confused when you went quiet. what's been up?"
+    ]
+   },
+   "avoid": [
+    "Acting like nothing happened if it hurt you",
+    "Instantly going back to daily texting"
+   ]
+  },
+  "meme_share": {
+   "name": "Shared something with you",
+   "goal": "React and turn it into a conversation.",
+   "approach": "React genuinely (😭 or 'this is so us'), then add something: your own story, a callback or a related send. Leaving shares unanswered is a quiet ghosting signal.",
+   "replies": {
+    "match": [
+     "😭😭 literally us",
+     "WHY is this so accurate"
+    ],
+    "playful": [
+     "you're not allowed to know me this well",
+     "ok now i have to send you one back"
+    ],
+    "sincere": [
+     "i love that you thought of me with this"
+    ]
+   },
+   "avoid": [
+    "Just hearting it with no reply, over and over",
+    "Leaving it on opened"
+   ]
+  },
+  "question_back": {
+   "name": "They're curious about you",
+   "goal": "Answer with substance, then ask back.",
+   "approach": "Give a real answer with one detail they can latch onto, then ask a question back. That's the loop that keeps a talking stage alive. Fill in the [your answer] bits with something true and specific.",
+   "replies": {
+    "match": [
+     "[your answer] lol, wbu?",
+     "honestly [your answer]. you?"
+    ],
+    "playful": [
+     "that's classified. trade you for yours"
+    ],
+    "sincere": [
+     "good question, [your answer]. what about you?"
+    ]
+   },
+   "avoid": [
+    "Answering without asking anything back",
+    "One-word answers"
+   ]
+  },
+  "enthusiastic": {
+   "name": "Excited",
+   "goal": "Match their energy.",
+   "approach": "Bring the same or a little more energy. Excitement that gets a flat reply is how people feel 'too much' and pull back.",
+   "replies": {
+    "match": [
+     "YES",
+     "omg i'm so excited"
+    ],
+    "playful": [
+     "ok we're both unwell about this and i love it"
+    ],
+    "sincere": [
+     "i love how excited you get about stuff"
+    ]
+   },
+   "avoid": [
+    "A flat 'cool' or 'nice'"
+   ]
+  },
+  "checkin": {
+   "name": "Low-effort check-in",
+   "goal": "Turn a 'hey' or 'wyd' into a real conversation.",
+   "approach": "Answer with something specific, add a hook (a question or a tease) and, if it's going well, a soft invite. Don't mirror their low effort with a 'nm hbu'.",
+   "replies": {
+    "match": [
+     "heyy! just got home, wbu?",
+     "rotting in bed watching tiktoks. you?"
+    ],
+    "playful": [
+     "thinking about how you owe me a coffee",
+     "was literally about to text you"
+    ],
+    "sincere": [
+     "hey you, how was your day?"
+    ]
+   },
+   "avoid": [
+    "'nm u?' (dry for dry kills it)",
+    "Ignoring it because it was low effort"
+   ]
+  },
+  "dry": {
+   "name": "Dry reply",
+   "goal": "Figure out whether it's a bad moment or fading interest, without chasing.",
+   "approach": "One dry reply is noise; three in a row is a pattern. Give one good opening (a question or a plan). If that also gets a one-word answer, step back and let them come to you.",
+   "replies": {
+    "match": [
+     "lol fair",
+     "haha true"
+    ],
+    "playful": [
+     "wow the enthusiasm 😭",
+     "ok i'll let you go, you're clearly busy"
+    ],
+    "sincere": [
+     "you seem a bit off today, everything okay?",
+     "no stress if you're busy, text me later"
+    ]
+   },
+   "avoid": [
+    "Sending three paragraphs to a 'k'",
+    "Calling them a dry texter after one reply",
+    "Matching with a dry reply back (two dry texters = the chat dies)"
+   ]
+  },
+  "statement": {
+   "name": "General message",
+   "goal": "Keep the conversation easy and moving.",
+   "approach": "React to what they said, add a bit of yourself, and leave a hook: a question, a tease or a callback.",
+   "replies": {
+    "match": [
+     "wait that's so cool",
+     "no way haha"
+    ],
+    "playful": [
+     "ok that's actually iconic"
+    ],
+    "sincere": [
+     "tell me more about that"
+    ]
+   },
+   "avoid": [
+    "Ending with nothing to answer"
+   ]
+  },
+  "closing": {
+   "name": "Wrapping up",
+   "goal": "End on a high note so the next chat starts easy.",
+   "approach": "Close warmly and leave a thread for next time (a callback, a plan, or 'tell me how X goes'). Ending on a good note is what makes them want to text first next time.",
+   "replies": {
+    "match": [
+     "see u!",
+     "ttyl 🫶"
+    ],
+    "playful": [
+     "ok bye, miss me"
+    ],
+    "sincere": [
+     "talk later! good luck with [thing they mentioned]"
+    ]
+   },
+   "avoid": [
+    "Trying to drag the chat on after they've said bye",
+    "Ending on a dry 'k'"
+   ]
+  }
+ },
+ "stages": {
+  "talking": {
+   "name": "Talking stage",
+   "about": "Getting to know each other with romantic intent, no label. Lots of 'wyd', questions, memes and first plans.",
+   "do": [
+    "Ask follow-up questions and remember the answers",
+    "Move from DMs to text or Snap, then to a real plan within a week or two",
+    "Text at a steady rhythm instead of all-or-nothing"
+   ],
+   "dont": [
+    "Let it run for months without meeting up",
+    "Play the 'wait twice as long' game",
+    "Interview them; share about yourself too"
+   ],
+   "ghost_risks": [
+    "No plan after 1-2 weeks of texting",
+    "Only one person asking questions",
+    "Replies getting shorter and slower"
+   ]
+  },
+  "flirting": {
+   "name": "Flirting stage",
+   "about": "Compliments, teasing, emojis like 😏🙈😳, 'you're trouble', banter that feels charged.",
+   "do": [
+    "Tease back and raise the heat a little at a time",
+    "Pair flirting with real plans",
+    "Give a sincere line now and then"
+   ],
+   "dont": [
+    "Jump to explicit content when the flirting is light",
+    "Flirt forever without meeting"
+   ],
+   "ghost_risks": [
+    "Flirting only late at night",
+    "Compliments but no interest in seeing you"
+   ]
+  },
+  "second_base": {
+   "name": "Getting physical",
+   "about": "Kissing and making out, invites to come over, 'can't stop thinking about last night'. Physical intimacy before (or alongside) defining things.",
+   "do": [
+    "Talk about pace and comfort openly; check in during",
+    "Text the next day so it doesn't feel like that's all it was",
+    "Keep doing non-physical dates too"
+   ],
+   "dont": [
+    "Assume a 'come over' or past kiss means yes to more",
+    "Go quiet afterwards",
+    "Send or ask for intimate pictures"
+   ],
+   "ghost_risks": [
+    "Texts that only happen when they want to hook up",
+    "Going cold right after getting physical",
+    "No plans that aren't at someone's place"
+   ]
+  },
+  "dtr": {
+   "name": "About to be official",
+   "about": "Good-morning/good-night routines, 'we' language, meeting friends, deleted apps, 'are we locked in?'",
+   "do": [
+    "Answer 'what are we' clearly and kindly",
+    "Have the official talk in person",
+    "Mirror the care: gm/gn, 'home safe', inside jokes"
+   ],
+   "dont": [
+    "Dodge the question with jokes",
+    "Keep the apps if you said you're exclusive"
+   ],
+   "ghost_risks": [
+    "Dodging 'what are we' more than once",
+    "One person still using the apps"
+   ]
+  },
+  "situationship": {
+   "name": "Situationship",
+   "about": "Acting like a couple without the label, often for too long. 'Not looking for anything serious', on-and-off texting.",
+   "do": [
+    "Decide what you want and say it",
+    "Set a time limit for yourself"
+   ],
+   "dont": [
+    "Wait for them to 'come around' indefinitely"
+   ],
+   "ghost_risks": [
+    "They're clear they don't want more",
+    "Hot-and-cold texting"
+   ]
+  },
+  "fading": {
+   "name": "Fading",
+   "about": "Short replies, long gaps, no questions, vague 'maybe's. Often how ghosting starts.",
+   "do": [
+    "Give one clear opening, then step back",
+    "If you're the one losing interest, say so instead of ghosting"
+   ],
+   "dont": [
+    "Chase with long texts",
+    "Read it as a test you need to pass"
+   ],
+   "ghost_risks": [
+    "Three dry replies in a row",
+    "Plans always 'maybe'",
+    "Left on read or opened for days"
+   ]
+  }
+ },
+ "platforms": {
+  "snapchat": {
+   "name": "Snapchat",
+   "notes": [
+    "Streaks are low-effort daily contact; a streak alone isn't deep interest",
+    "'Opened' with no reply for hours = low priority right now",
+    "Chatting (not just snapping) and sending selfies (not just the ceiling) = real interest",
+    "Moving from Snap to text or FaceTime is a step up"
+   ]
+  },
+  "instagram": {
+   "name": "Instagram DMs",
+   "notes": [
+    "Story replies are a low-risk opener; reacting to every story is a crush signal",
+    "Only story-watching, no texting = possible orbiting",
+    "Sharing reels to you = thinking of you",
+    "'Seen' with no reply reads like left on read"
+   ]
+  },
+  "tiktok": {
+   "name": "TikTok DMs",
+   "notes": [
+    "Sending TikToks daily is a love language; react, don't just like",
+    "Reposting 'relationship' TikToks after talking to you can be a soft hint"
+   ]
+  },
+  "imessage": {
+   "name": "iMessage / SMS",
+   "notes": [
+    "Read receipts on + no reply hits harder",
+    "Tapbacks (❤️, 😂) on a question is a soft dodge",
+    "Moving to texting from apps means more trust"
+   ]
+  },
+  "whatsapp": {
+   "name": "WhatsApp",
+   "notes": [
+    "Blue ticks with no reply = left on read",
+    "Voice notes mean they're comfortable with you"
+   ]
+  },
+  "dating_app": {
+   "name": "Hinge / Tinder / Bumble",
+   "notes": [
+    "Move to a date or another app within a few days, chats on apps die fast",
+    "Asking for your number or Snap = interest",
+    "Deleting the app is a big exclusivity signal"
+   ]
+  },
+  "discord": {
+   "name": "Discord",
+   "notes": [
+    "Inviting you into VC or a small server is like meeting friends",
+    "Gaming together counts as quality time"
+   ]
+  }
+ },
+ "generations": {
+  "_comment": "Markers that suggest how someone texts. A rough guess from style only; never treat it as anyone's actual age.",
+  "alpha": {
+   "name": "Gen Alpha-leaning",
+   "markers": [
+    "skibidi",
+    "gyatt",
+    "gyat",
+    "fanum",
+    "sigma",
+    "ohio",
+    "rizzler",
+    "6 7",
+    "67",
+    "aura",
+    "mewing",
+    "chat is this real",
+    "bro is cooked"
+   ]
+  },
+  "genz": {
+   "name": "Gen Z",
+   "markers": [
+    "😭",
+    "💀",
+    "fr",
+    "lowkey",
+    "ngl",
+    "no cap",
+    "slay",
+    "bestie",
+    "it's giving",
+    "delulu",
+    "ate",
+    "rizz",
+    "bffr",
+    "iykyk",
+    "ick",
+    "wyd",
+    "hbu",
+    "istg",
+    "ong",
+    "periodt",
+    "the way",
+    "not me",
+    "be so fr"
+   ]
+  },
+  "millennial": {
+   "name": "Millennial-style",
+   "markers": [
+    "😂",
+    "lol.",
+    "haha.",
+    "yolo",
+    "on fleek",
+    "bae",
+    "adulting",
+    "hangry",
+    "xoxo",
+    "👍",
+    "totally",
+    "awesome",
+    "squad goals",
+    "lolz",
+    "tbt"
+   ]
+  }
+ },
+ "typing": {
+  "_comment": "Meanings for typing-style signals the analyzer measures (not word lists).",
+  "period_end": {
+   "label": "Ends with a period",
+   "meaning": "To Gen Z a full stop on a short text ('ok.', 'sure.') reads cold, annoyed or serious.",
+   "tone": "dry",
+   "interest": -1
+  },
+  "all_lower": {
+   "label": "All lowercase",
+   "meaning": "Normal, relaxed Gen Z texting. Nothing negative.",
+   "tone": "neutral",
+   "interest": 0
+  },
+  "all_caps": {
+   "label": "ALL CAPS",
+   "meaning": "Excitement or yelling-for-fun, not anger (in Gen Z texting).",
+   "tone": "hype",
+   "interest": 1
+  },
+  "stretched": {
+   "label": "Stretched letters",
+   "meaning": "'heyyy', 'stoppp', 'okayyy': extra letters add warmth and energy. More letters, more flirty.",
+   "tone": "flirty",
+   "interest": 1
+  },
+  "keysmash": {
+   "label": "Keysmash",
+   "meaning": "'asdfghjkl' means overwhelmed, flustered, or laughing too hard to type.",
+   "tone": "flirty",
+   "interest": 1
+  },
+  "multi_question": {
+   "label": "Lots of questions",
+   "meaning": "They're curious about you. Very good sign.",
+   "tone": "warm",
+   "interest": 1
+  },
+  "question": {
+   "label": "Asks a question",
+   "meaning": "Gives you something to answer, keeps it going.",
+   "tone": "warm",
+   "interest": 1
+  },
+  "no_question_short": {
+   "label": "Short, no question",
+   "meaning": "Nothing to reply to. If it keeps happening, they may be winding down.",
+   "tone": "dry",
+   "interest": -1
+  },
+  "long": {
+   "label": "Long message",
+   "meaning": "They put real effort and thought into this one.",
+   "tone": "warm",
+   "interest": 1
+  },
+  "exclaim": {
+   "label": "Exclamation marks",
+   "meaning": "Warmth and energy, especially '!!'.",
+   "tone": "hype",
+   "interest": 1
+  },
+  "ellipsis": {
+   "label": "Trailing dots ...",
+   "meaning": "Hesitation, awkwardness, or something left unsaid. Gen Z can read it as passive-aggressive.",
+   "tone": "anxious",
+   "interest": 0
+  },
+  "lol_softener": {
+   "label": "'lol' as a cushion",
+   "meaning": "A 'lol' tacked onto a serious line softens it. They mean the line; the lol is protection.",
+   "tone": "anxious",
+   "interest": 0
+  },
+  "emoji_heavy": {
+   "label": "Lots of emoji",
+   "meaning": "Expressive and putting in effort.",
+   "tone": "playful",
+   "interest": 1
+  },
+  "burst": {
+   "label": "Several texts in a row",
+   "meaning": "Double/triple texting: comfortable and engaged, not playing the waiting game.",
+   "tone": "warm",
+   "interest": 1
+  },
+  "slow_reply": {
+   "label": "Slow reply",
+   "meaning": "A long gap before answering. On its own it could be life; as a trend it's a fading signal.",
+   "tone": "dry",
+   "interest": -1
+  },
+  "fast_reply": {
+   "label": "Quick reply",
+   "meaning": "They answered fast. They were waiting on you or happy to talk.",
+   "tone": "warm",
+   "interest": 1
+  },
+  "shorter_than_you": {
+   "label": "Much shorter than your text",
+   "meaning": "You wrote a lot and got a little back. One-sided effort is the classic early ghosting sign.",
+   "tone": "dry",
+   "interest": -1
+  }
+ },
+ "tones": {
+  "flirty": "flirty",
+  "physical": "flirty, physically interested",
+  "playful": "playful",
+  "warm": "warm",
+  "hype": "excited",
+  "agree": "agreeable",
+  "serious": "serious",
+  "neutral": "neutral",
+  "dry": "dry / low effort",
+  "sarcastic": "sarcastic",
+  "anxious": "nervous / hesitant",
+  "upset": "upset",
+  "sad": "down",
+  "negative": "negative"
+ },
+ "tone_feelings": {
+  "flirty": "into you",
+  "physical": "physically attracted",
+  "playful": "having fun with you",
+  "warm": "comfortable with you",
+  "hype": "excited",
+  "agree": "on the same page",
+  "serious": "invested, means it",
+  "neutral": "neutral",
+  "dry": "low energy or distracted",
+  "sarcastic": "a bit annoyed or joking",
+  "anxious": "nervous, unsure",
+  "upset": "upset",
+  "sad": "down",
+  "negative": "put off"
+ }
+}

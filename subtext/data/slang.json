@@ -1,0 +1,2079 @@
+{
+ "_comment": "Slang the decoder recognises. Each entry: term -> [meaning, tone, interest, origin]. tone is one of the keys in tones.json; interest runs -2 (pulling away) to +2 (very into you) and only counts when the word is used about you or the chat; origin is a key in 'origins'. Matching is whole-word and case-insensitive. Keep entries lowercase.",
+ "origins": {
+  "core": "mainstream Gen Z (texting, IG, Snap, TikTok)",
+  "alpha": "Gen Alpha / younger TikTok and Roblox meme slang",
+  "aave": "African American Vernacular English; widely borrowed online, so use it only if it's natural for you",
+  "ballroom": "Black and Latinx LGBTQ+ ballroom culture, spread through TikTok and stan Twitter",
+  "online": "Twitter/X, Reddit and Discord internet speak",
+  "dating": "dating-app and talking-stage vocabulary",
+  "algospeak": "TikTok 'algospeak' (words swapped to dodge filters)",
+  "uk": "UK / London (often from Multicultural London English)",
+  "aus": "Australian",
+  "latinx": "Spanish / Spanglish",
+  "arabic": "Arabic loanwords common with UK, US and Gulf Gen Z",
+  "kpop": "K-pop fandom",
+  "millennial": "millennial-coded; reads older or ironic to Gen Z",
+  "gaming": "gaming / Discord / Twitch"
+ },
+ "terms": {
+  "lowkey": [
+   "a little, or secretly; softens a real feeling so it feels less risky to say",
+   "playful",
+   0,
+   "core"
+  ],
+  "highkey": [
+   "openly, very much",
+   "hype",
+   0,
+   "core"
+  ],
+  "fr": [
+   "for real; agreeing or adding emphasis",
+   "agree",
+   0,
+   "core"
+  ],
+  "frfr": [
+   "for real for real; strong emphasis, they mean it",
+   "agree",
+   0,
+   "core"
+  ],
+  "ong": [
+   "on god; I swear",
+   "agree",
+   0,
+   "aave"
+  ],
+  "on god": [
+   "I swear, I mean it",
+   "agree",
+   0,
+   "aave"
+  ],
+  "no cap": [
+   "no lie, I'm serious",
+   "agree",
+   0,
+   "aave"
+  ],
+  "cap": [
+   "a lie, or 'you're lying'",
+   "playful",
+   0,
+   "aave"
+  ],
+  "capping": [
+   "lying",
+   "playful",
+   0,
+   "aave"
+  ],
+  "bet": [
+   "ok, deal, sounds good",
+   "agree",
+   0,
+   "aave"
+  ],
+  "say less": [
+   "say no more, I'm in",
+   "hype",
+   1,
+   "aave"
+  ],
+  "slay": [
+   "did great, looks great",
+   "hype",
+   1,
+   "ballroom"
+  ],
+  "ate": [
+   "did amazingly ('you ate that')",
+   "hype",
+   1,
+   "ballroom"
+  ],
+  "ate and left no crumbs": [
+   "did it perfectly",
+   "hype",
+   1,
+   "ballroom"
+  ],
+  "served": [
+   "looked or did great",
+   "hype",
+   1,
+   "ballroom"
+  ],
+  "mother": [
+   "iconic, the best",
+   "hype",
+   1,
+   "ballroom"
+  ],
+  "mothered": [
+   "did it iconically",
+   "hype",
+   1,
+   "ballroom"
+  ],
+  "it's giving": [
+   "it has the vibe of...",
+   "playful",
+   0,
+   "ballroom"
+  ],
+  "its giving": [
+   "it has the vibe of...",
+   "playful",
+   0,
+   "ballroom"
+  ],
+  "periodt": [
+   "end of discussion, fully agreed",
+   "hype",
+   0,
+   "aave"
+  ],
+  "period": [
+   "end of discussion",
+   "agree",
+   0,
+   "core"
+  ],
+  "bussin": [
+   "really good (usually food)",
+   "hype",
+   0,
+   "aave"
+  ],
+  "valid": [
+   "fair, reasonable, good",
+   "agree",
+   0,
+   "core"
+  ],
+  "based": [
+   "says what they think and owns it",
+   "agree",
+   0,
+   "online"
+  ],
+  "mid": [
+   "mediocre, not that good",
+   "dry",
+   0,
+   "core"
+  ],
+  "bffr": [
+   "be for real; you can't be serious",
+   "sarcastic",
+   0,
+   "core"
+  ],
+  "iykyk": [
+   "if you know you know (inside joke)",
+   "playful",
+   0,
+   "core"
+  ],
+  "idc": [
+   "I don't care",
+   "dry",
+   -1,
+   "core"
+  ],
+  "idk": [
+   "I don't know",
+   "neutral",
+   0,
+   "core"
+  ],
+  "idek": [
+   "I don't even know",
+   "neutral",
+   0,
+   "core"
+  ],
+  "ngl": [
+   "not gonna lie; something honest is coming",
+   "warm",
+   0,
+   "core"
+  ],
+  "tbh": [
+   "to be honest; something real is coming",
+   "warm",
+   0,
+   "core"
+  ],
+  "imo": [
+   "in my opinion",
+   "neutral",
+   0,
+   "core"
+  ],
+  "rn": [
+   "right now",
+   "neutral",
+   0,
+   "core"
+  ],
+  "atm": [
+   "at the moment",
+   "neutral",
+   0,
+   "core"
+  ],
+  "wyd": [
+   "what you doing? a low-effort check-in, but it means you were on their mind",
+   "flirty",
+   1,
+   "core"
+  ],
+  "wya": [
+   "where you at? usually wants to link up",
+   "flirty",
+   1,
+   "core"
+  ],
+  "hbu": [
+   "how about you? asking back is effort",
+   "warm",
+   1,
+   "core"
+  ],
+  "wbu": [
+   "what about you? asking back is effort",
+   "warm",
+   1,
+   "core"
+  ],
+  "hru": [
+   "how are you?",
+   "warm",
+   1,
+   "core"
+  ],
+  "sm": [
+   "so much",
+   "warm",
+   0,
+   "core"
+  ],
+  "tysm": [
+   "thank you so much",
+   "warm",
+   0,
+   "core"
+  ],
+  "ty": [
+   "thank you",
+   "neutral",
+   0,
+   "core"
+  ],
+  "np": [
+   "no problem",
+   "neutral",
+   0,
+   "core"
+  ],
+  "ofc": [
+   "of course",
+   "warm",
+   0,
+   "core"
+  ],
+  "istg": [
+   "I swear to god",
+   "hype",
+   0,
+   "core"
+  ],
+  "omw": [
+   "on my way",
+   "neutral",
+   0,
+   "core"
+  ],
+  "ttyl": [
+   "talk to you later; closing the chat for now",
+   "neutral",
+   0,
+   "core"
+  ],
+  "gtg": [
+   "got to go; ending the chat",
+   "neutral",
+   0,
+   "core"
+  ],
+  "g2g": [
+   "got to go; ending the chat",
+   "neutral",
+   0,
+   "core"
+  ],
+  "brb": [
+   "be right back",
+   "neutral",
+   0,
+   "core"
+  ],
+  "nvm": [
+   "never mind; they dropped the topic, sometimes because it didn't land",
+   "dry",
+   0,
+   "core"
+  ],
+  "smh": [
+   "shaking my head",
+   "sarcastic",
+   0,
+   "core"
+  ],
+  "irl": [
+   "in real life",
+   "neutral",
+   0,
+   "core"
+  ],
+  "pov": [
+   "point of view (setting up a scenario or joke)",
+   "playful",
+   0,
+   "core"
+  ],
+  "ick": [
+   "a sudden turn-off",
+   "negative",
+   -1,
+   "dating"
+  ],
+  "the ick": [
+   "a sudden turn-off",
+   "negative",
+   -1,
+   "dating"
+  ],
+  "rizz": [
+   "charm, flirting skill",
+   "flirty",
+   1,
+   "core"
+  ],
+  "unspoken rizz": [
+   "charm without even trying",
+   "flirty",
+   1,
+   "core"
+  ],
+  "rizzler": [
+   "someone with a lot of rizz",
+   "flirty",
+   1,
+   "alpha"
+  ],
+  "rizz me up": [
+   "flirt with me",
+   "flirty",
+   2,
+   "alpha"
+  ],
+  "situationship": [
+   "romantic and kinda committed, but no label",
+   "serious",
+   0,
+   "dating"
+  ],
+  "talking stage": [
+   "getting to know each other with romantic intent, no label yet",
+   "serious",
+   0,
+   "dating"
+  ],
+  "dtr": [
+   "define the relationship",
+   "serious",
+   1,
+   "dating"
+  ],
+  "soft launch": [
+   "hinting at a relationship online without showing the person",
+   "flirty",
+   1,
+   "dating"
+  ],
+  "hard launch": [
+   "posting the person openly as your partner",
+   "serious",
+   2,
+   "dating"
+  ],
+  "locked in": [
+   "committed or focused; in dating it means exclusive",
+   "serious",
+   2,
+   "core"
+  ],
+  "lock in": [
+   "focus up / commit",
+   "serious",
+   1,
+   "core"
+  ],
+  "down bad": [
+   "very into someone, kind of desperately",
+   "flirty",
+   2,
+   "core"
+  ],
+  "simp": [
+   "someone overly devoted to a crush",
+   "playful",
+   1,
+   "core"
+  ],
+  "simping": [
+   "being overly devoted to a crush",
+   "playful",
+   1,
+   "core"
+  ],
+  "pick me": [
+   "seeks approval by putting others down",
+   "negative",
+   0,
+   "core"
+  ],
+  "delulu": [
+   "delusional, often self-aware about a crush",
+   "playful",
+   1,
+   "core"
+  ],
+  "delulu is the solulu": [
+   "staying delusionally hopeful is the plan",
+   "playful",
+   1,
+   "core"
+  ],
+  "main character": [
+   "living like the star of the story",
+   "playful",
+   0,
+   "core"
+  ],
+  "npc": [
+   "boring, unoriginal, background person",
+   "sarcastic",
+   0,
+   "gaming"
+  ],
+  "touch grass": [
+   "go outside, you're too online",
+   "sarcastic",
+   0,
+   "online"
+  ],
+  "ratio": [
+   "your reply got more likes than the post (you lost the argument)",
+   "sarcastic",
+   0,
+   "online"
+  ],
+  "goat": [
+   "greatest of all time",
+   "hype",
+   1,
+   "core"
+  ],
+  "goated": [
+   "the best at something",
+   "hype",
+   1,
+   "core"
+  ],
+  "fire": [
+   "really good",
+   "hype",
+   0,
+   "core"
+  ],
+  "hits different": [
+   "feels uniquely good",
+   "warm",
+   0,
+   "core"
+  ],
+  "vibe": [
+   "a feeling or energy; 'we vibe' means we click",
+   "warm",
+   1,
+   "core"
+  ],
+  "vibes": [
+   "a feeling or energy",
+   "warm",
+   0,
+   "core"
+  ],
+  "vibing": [
+   "getting along, clicking",
+   "warm",
+   1,
+   "core"
+  ],
+  "vibe check": [
+   "checking someone's energy or mood",
+   "playful",
+   0,
+   "core"
+  ],
+  "sending me": [
+   "that made me laugh hard",
+   "playful",
+   1,
+   "core"
+  ],
+  "im dead": [
+   "that made me laugh hard",
+   "playful",
+   1,
+   "core"
+  ],
+  "i'm dead": [
+   "that made me laugh hard",
+   "playful",
+   1,
+   "core"
+  ],
+  "dead": [
+   "laughing hard",
+   "playful",
+   0,
+   "core"
+  ],
+  "im weak": [
+   "laughing hard",
+   "playful",
+   1,
+   "aave"
+  ],
+  "crying": [
+   "laughing hard (not sad)",
+   "playful",
+   0,
+   "core"
+  ],
+  "screaming": [
+   "laughing or excited",
+   "hype",
+   0,
+   "core"
+  ],
+  "ijbol": [
+   "I just burst out laughing",
+   "playful",
+   1,
+   "core"
+  ],
+  "stan": [
+   "a big fan of",
+   "hype",
+   0,
+   "online"
+  ],
+  "bestie": [
+   "friend; from a crush it can be playful or a soft friend-zone, read the rest of the text",
+   "warm",
+   0,
+   "core"
+  ],
+  "bro": [
+   "casual 'dude'; from a crush with nothing flirty around it, it can mean friend-zone",
+   "neutral",
+   0,
+   "core"
+  ],
+  "bruh": [
+   "exasperated 'dude'",
+   "sarcastic",
+   0,
+   "aave"
+  ],
+  "dude": [
+   "casual address; a little friend-coded",
+   "neutral",
+   0,
+   "millennial"
+  ],
+  "sus": [
+   "suspicious",
+   "playful",
+   0,
+   "gaming"
+  ],
+  "salty": [
+   "bitter or annoyed",
+   "negative",
+   0,
+   "core"
+  ],
+  "pressed": [
+   "bothered, upset about something",
+   "negative",
+   0,
+   "core"
+  ],
+  "tea": [
+   "gossip",
+   "playful",
+   0,
+   "ballroom"
+  ],
+  "spill the tea": [
+   "tell me the gossip",
+   "playful",
+   0,
+   "ballroom"
+  ],
+  "sis": [
+   "friend, girl",
+   "warm",
+   0,
+   "ballroom"
+  ],
+  "shook": [
+   "shocked",
+   "hype",
+   0,
+   "core"
+  ],
+  "extra": [
+   "over the top",
+   "playful",
+   0,
+   "core"
+  ],
+  "boujee": [
+   "fancy, high-end",
+   "playful",
+   0,
+   "aave"
+  ],
+  "snatched": [
+   "looks great",
+   "hype",
+   1,
+   "ballroom"
+  ],
+  "oop": [
+   "oops / awkward surprise",
+   "playful",
+   0,
+   "core"
+  ],
+  "sheesh": [
+   "wow, impressive",
+   "hype",
+   1,
+   "core"
+  ],
+  "drip": [
+   "great outfit or style",
+   "hype",
+   1,
+   "aave"
+  ],
+  "fit check": [
+   "show me your outfit",
+   "playful",
+   1,
+   "core"
+  ],
+  "glow up": [
+   "got way better looking or doing better",
+   "hype",
+   0,
+   "core"
+  ],
+  "gyat": [
+   "crude exclamation about someone's body",
+   "physical",
+   1,
+   "alpha"
+  ],
+  "gyatt": [
+   "crude exclamation about someone's body",
+   "physical",
+   1,
+   "alpha"
+  ],
+  "skibidi": [
+   "meme nonsense word (Gen Alpha)",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "sigma": [
+   "ironic 'lone wolf' cool",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "ohio": [
+   "weird, cursed",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "fanum tax": [
+   "stealing a bite of someone's food (meme)",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "67": [
+   "meaningless meme chant (Gen Alpha, 2025)",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "6 7": [
+   "meaningless meme chant (Gen Alpha, 2025)",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "aura": [
+   "coolness points ('-1000 aura' = embarrassing)",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "aura farming": [
+   "acting cool on purpose to look good",
+   "playful",
+   0,
+   "alpha"
+  ],
+  "cooked": [
+   "done for, doomed",
+   "playful",
+   0,
+   "core"
+  ],
+  "chopped": [
+   "ugly, a mess",
+   "negative",
+   0,
+   "core"
+  ],
+  "crashout": [
+   "losing it emotionally",
+   "upset",
+   0,
+   "core"
+  ],
+  "crash out": [
+   "lose it emotionally",
+   "upset",
+   0,
+   "core"
+  ],
+  "crashing out": [
+   "losing it emotionally",
+   "upset",
+   0,
+   "core"
+  ],
+  "tweaking": [
+   "acting crazy, or 'you're wrong'",
+   "sarcastic",
+   0,
+   "aave"
+  ],
+  "brainrot": [
+   "dumb online content that melts your brain",
+   "playful",
+   0,
+   "core"
+  ],
+  "glazing": [
+   "over-praising someone",
+   "playful",
+   1,
+   "core"
+  ],
+  "glaze": [
+   "over-praise someone",
+   "playful",
+   1,
+   "core"
+  ],
+  "yapping": [
+   "talking a lot; 'sorry for yapping' means they felt comfortable opening up",
+   "warm",
+   1,
+   "core"
+  ],
+  "yap": [
+   "talk a lot",
+   "playful",
+   0,
+   "core"
+  ],
+  "pookie": [
+   "cute pet name",
+   "flirty",
+   2,
+   "core"
+  ],
+  "bae": [
+   "babe, partner",
+   "flirty",
+   2,
+   "millennial"
+  ],
+  "babe": [
+   "pet name; romantic, or just affectionate if they say it to everyone",
+   "flirty",
+   2,
+   "core"
+  ],
+  "baby": [
+   "pet name",
+   "flirty",
+   2,
+   "core"
+  ],
+  "cutie": [
+   "cute person; flirty",
+   "flirty",
+   2,
+   "core"
+  ],
+  "handsome": [
+   "compliment",
+   "flirty",
+   2,
+   "core"
+  ],
+  "pretty": [
+   "compliment (or 'pretty good')",
+   "warm",
+   1,
+   "core"
+  ],
+  "mogging": [
+   "out-looking someone",
+   "playful",
+   0,
+   "online"
+  ],
+  "looksmaxxing": [
+   "working on your looks",
+   "playful",
+   0,
+   "online"
+  ],
+  "lmao": [
+   "laughing",
+   "playful",
+   0,
+   "core"
+  ],
+  "lmfao": [
+   "laughing hard",
+   "playful",
+   1,
+   "core"
+  ],
+  "lol": [
+   "light laugh, often a softener rather than real laughter",
+   "neutral",
+   0,
+   "core"
+  ],
+  "lolz": [
+   "laughing (dated/ironic)",
+   "playful",
+   0,
+   "millennial"
+  ],
+  "haha": [
+   "light laugh",
+   "neutral",
+   0,
+   "core"
+  ],
+  "hahaha": [
+   "real laugh",
+   "playful",
+   1,
+   "core"
+  ],
+  "hehe": [
+   "cute, mischievous giggle; flirty",
+   "flirty",
+   1,
+   "core"
+  ],
+  "hihi": [
+   "cute giggle",
+   "flirty",
+   1,
+   "core"
+  ],
+  "deadass": [
+   "seriously, for real",
+   "agree",
+   0,
+   "aave"
+  ],
+  "finna": [
+   "about to",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "tryna": [
+   "trying to; 'u tryna...' is an invite",
+   "neutral",
+   1,
+   "aave"
+  ],
+  "ight": [
+   "alright",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "aight": [
+   "alright",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "k": [
+   "ok, but cold; can mean annoyed or done talking",
+   "dry",
+   -1,
+   "core"
+  ],
+  "kk": [
+   "friendly ok",
+   "neutral",
+   0,
+   "core"
+  ],
+  "okie": [
+   "cute ok",
+   "warm",
+   1,
+   "core"
+  ],
+  "oki": [
+   "cute ok",
+   "warm",
+   1,
+   "core"
+  ],
+  "okii": [
+   "cute ok",
+   "warm",
+   1,
+   "core"
+  ],
+  "okayyy": [
+   "ok, with energy",
+   "warm",
+   1,
+   "core"
+  ],
+  "ilysm": [
+   "I love you so much (friends say it casually too)",
+   "warm",
+   1,
+   "core"
+  ],
+  "ily": [
+   "I love you (friends say it casually too)",
+   "warm",
+   1,
+   "core"
+  ],
+  "hmu": [
+   "hit me up; reach out",
+   "warm",
+   1,
+   "core"
+  ],
+  "lmk": [
+   "let me know",
+   "neutral",
+   0,
+   "core"
+  ],
+  "slide": [
+   "come over / come through",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "slide thru": [
+   "come over",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "pull up": [
+   "come over / meet up",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "link": [
+   "meet up",
+   "flirty",
+   2,
+   "uk"
+  ],
+  "link up": [
+   "meet up",
+   "flirty",
+   2,
+   "uk"
+  ],
+  "kick it": [
+   "hang out",
+   "warm",
+   1,
+   "aave"
+  ],
+  "netflix and chill": [
+   "euphemism for hooking up",
+   "physical",
+   2,
+   "millennial"
+  ],
+  "talking": [
+   "dating before a label",
+   "serious",
+   0,
+   "dating"
+  ],
+  "exclusive": [
+   "not seeing anyone else",
+   "serious",
+   2,
+   "dating"
+  ],
+  "ghost": [
+   "disappear without explanation",
+   "negative",
+   0,
+   "dating"
+  ],
+  "ghosting": [
+   "disappearing without explanation",
+   "negative",
+   0,
+   "dating"
+  ],
+  "ghosted": [
+   "got disappeared on",
+   "negative",
+   0,
+   "dating"
+  ],
+  "breadcrumbing": [
+   "sending just enough attention to keep you hooked",
+   "negative",
+   0,
+   "dating"
+  ],
+  "benching": [
+   "keeping someone on standby",
+   "negative",
+   0,
+   "dating"
+  ],
+  "orbiting": [
+   "stopped texting but still watches your stories",
+   "negative",
+   0,
+   "dating"
+  ],
+  "zombieing": [
+   "a ghost coming back like nothing happened",
+   "negative",
+   0,
+   "dating"
+  ],
+  "love bombing": [
+   "overwhelming affection early, sometimes to control",
+   "negative",
+   0,
+   "dating"
+  ],
+  "dry texter": [
+   "someone who gives short, low-effort replies",
+   "dry",
+   0,
+   "dating"
+  ],
+  "left on read": [
+   "seen but not answered",
+   "negative",
+   0,
+   "core"
+  ],
+  "left on opened": [
+   "Snap opened but not answered",
+   "negative",
+   0,
+   "core"
+  ],
+  "streak": [
+   "Snapchat streak (daily snaps both ways)",
+   "warm",
+   0,
+   "core"
+  ],
+  "streaks": [
+   "Snapchat streaks",
+   "neutral",
+   0,
+   "core"
+  ],
+  "roman empire": [
+   "something you think about constantly ('you're my roman empire')",
+   "flirty",
+   2,
+   "core"
+  ],
+  "green flag": [
+   "a good sign",
+   "warm",
+   1,
+   "dating"
+  ],
+  "red flag": [
+   "a warning sign",
+   "negative",
+   0,
+   "dating"
+  ],
+  "beige flag": [
+   "a weird but harmless quirk",
+   "playful",
+   0,
+   "dating"
+  ],
+  "bare minimum": [
+   "the least effort someone could do",
+   "negative",
+   0,
+   "dating"
+  ],
+  "rent free": [
+   "can't stop thinking about it/you",
+   "flirty",
+   2,
+   "core"
+  ],
+  "living rent free": [
+   "can't stop thinking about it/you",
+   "flirty",
+   2,
+   "core"
+  ],
+  "cheugy": [
+   "out of date, trying too hard",
+   "sarcastic",
+   0,
+   "core"
+  ],
+  "no shot": [
+   "no way",
+   "hype",
+   0,
+   "core"
+  ],
+  "facts": [
+   "agreed, true",
+   "agree",
+   0,
+   "core"
+  ],
+  "fax": [
+   "agreed, true",
+   "agree",
+   0,
+   "core"
+  ],
+  "so real": [
+   "relatable, agreed",
+   "agree",
+   0,
+   "core"
+  ],
+  "real": [
+   "relatable, agreed",
+   "agree",
+   0,
+   "core"
+  ],
+  "same": [
+   "relatable",
+   "agree",
+   0,
+   "core"
+  ],
+  "mood": [
+   "relatable",
+   "agree",
+   0,
+   "core"
+  ],
+  "big mood": [
+   "very relatable",
+   "agree",
+   0,
+   "core"
+  ],
+  "i felt that": [
+   "very relatable",
+   "warm",
+   0,
+   "aave"
+  ],
+  "oomf": [
+   "one of my followers",
+   "neutral",
+   0,
+   "online"
+  ],
+  "moots": [
+   "mutual followers",
+   "neutral",
+   0,
+   "online"
+  ],
+  "bias": [
+   "favourite member (K-pop)",
+   "playful",
+   0,
+   "kpop"
+  ],
+  "jit": [
+   "young person",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "ahh": [
+   "'ass' softened ('goofy ahh')",
+   "playful",
+   0,
+   "algospeak"
+  ],
+  "unalive": [
+   "algospeak for die / kill; if it's about them, check in seriously",
+   "sad",
+   0,
+   "algospeak"
+  ],
+  "seggs": [
+   "algospeak for sex",
+   "physical",
+   1,
+   "algospeak"
+  ],
+  "spicy": [
+   "sexual or risqué",
+   "physical",
+   1,
+   "core"
+  ],
+  "corn": [
+   "algospeak for porn",
+   "physical",
+   0,
+   "algospeak"
+  ],
+  "opp": [
+   "enemy, rival",
+   "negative",
+   0,
+   "aave"
+  ],
+  "opps": [
+   "enemies, rivals",
+   "negative",
+   0,
+   "aave"
+  ],
+  "boo": [
+   "partner, babe",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "wifey": [
+   "girlfriend/wife (affectionate)",
+   "flirty",
+   2,
+   "core"
+  ],
+  "hubby": [
+   "boyfriend/husband (affectionate)",
+   "flirty",
+   2,
+   "core"
+  ],
+  "my person": [
+   "the one I'm closest to",
+   "serious",
+   2,
+   "core"
+  ],
+  "shawty": [
+   "attractive girl, or girlfriend",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "twin": [
+   "close friend; can friend-zone if a crush uses it",
+   "warm",
+   0,
+   "core"
+  ],
+  "gang": [
+   "friends, the group",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "fam": [
+   "friends, family",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "mate": [
+   "friend",
+   "neutral",
+   0,
+   "uk"
+  ],
+  "innit": [
+   "isn't it / right?",
+   "neutral",
+   0,
+   "uk"
+  ],
+  "peng": [
+   "attractive",
+   "flirty",
+   2,
+   "uk"
+  ],
+  "wagwan": [
+   "what's going on / hi",
+   "warm",
+   0,
+   "uk"
+  ],
+  "bare": [
+   "a lot",
+   "neutral",
+   0,
+   "uk"
+  ],
+  "mandem": [
+   "the guys",
+   "neutral",
+   0,
+   "uk"
+  ],
+  "gyal": [
+   "girl",
+   "neutral",
+   0,
+   "uk"
+  ],
+  "fit": [
+   "attractive (UK) or outfit (US)",
+   "flirty",
+   1,
+   "uk"
+  ],
+  "cheeky": [
+   "playfully naughty",
+   "flirty",
+   1,
+   "uk"
+  ],
+  "reckon": [
+   "think",
+   "neutral",
+   0,
+   "uk"
+  ],
+  "arvo": [
+   "afternoon",
+   "neutral",
+   0,
+   "aus"
+  ],
+  "heaps": [
+   "a lot",
+   "neutral",
+   0,
+   "aus"
+  ],
+  "keen": [
+   "eager, up for it",
+   "warm",
+   1,
+   "aus"
+  ],
+  "wey": [
+   "dude (Mexican Spanish)",
+   "neutral",
+   0,
+   "latinx"
+  ],
+  "guey": [
+   "dude (Mexican Spanish)",
+   "neutral",
+   0,
+   "latinx"
+  ],
+  "mija": [
+   "my dear (girl)",
+   "warm",
+   0,
+   "latinx"
+  ],
+  "mijo": [
+   "my dear (boy)",
+   "warm",
+   0,
+   "latinx"
+  ],
+  "mi amor": [
+   "my love",
+   "flirty",
+   2,
+   "latinx"
+  ],
+  "wallahi": [
+   "I swear (to God)",
+   "agree",
+   0,
+   "arabic"
+  ],
+  "habibi": [
+   "my dear / my love",
+   "flirty",
+   1,
+   "arabic"
+  ],
+  "habibti": [
+   "my dear / my love (to a girl)",
+   "flirty",
+   1,
+   "arabic"
+  ],
+  "yalla": [
+   "let's go",
+   "hype",
+   0,
+   "arabic"
+  ],
+  "omg": [
+   "oh my god",
+   "hype",
+   0,
+   "millennial"
+  ],
+  "yolo": [
+   "you only live once",
+   "hype",
+   0,
+   "millennial"
+  ],
+  "on fleek": [
+   "perfect (2014 slang; ironic now)",
+   "playful",
+   0,
+   "millennial"
+  ],
+  "adulting": [
+   "doing grown-up tasks",
+   "playful",
+   0,
+   "millennial"
+  ],
+  "xoxo": [
+   "hugs and kisses",
+   "warm",
+   1,
+   "millennial"
+  ],
+  "hangry": [
+   "hungry and angry",
+   "playful",
+   0,
+   "millennial"
+  ],
+  "gg": [
+   "good game; it's over",
+   "neutral",
+   0,
+   "gaming"
+  ],
+  "w": [
+   "a win, great",
+   "hype",
+   1,
+   "core"
+  ],
+  "l": [
+   "a loss, bad",
+   "negative",
+   0,
+   "core"
+  ],
+  "huge w": [
+   "big win",
+   "hype",
+   1,
+   "core"
+  ],
+  "fumble": [
+   "lose a good person or chance",
+   "playful",
+   0,
+   "core"
+  ],
+  "fumbled": [
+   "lost a good person or chance",
+   "playful",
+   0,
+   "core"
+  ],
+  "don't fumble": [
+   "don't lose this",
+   "flirty",
+   1,
+   "core"
+  ],
+  "the bag": [
+   "money / a good thing",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "wdym": [
+   "what do you mean",
+   "neutral",
+   0,
+   "core"
+  ],
+  "wym": [
+   "what do you mean",
+   "neutral",
+   0,
+   "core"
+  ],
+  "hbd": [
+   "happy birthday",
+   "warm",
+   0,
+   "core"
+  ],
+  "gm": [
+   "good morning",
+   "warm",
+   1,
+   "core"
+  ],
+  "gn": [
+   "good night",
+   "warm",
+   1,
+   "core"
+  ],
+  "gnight": [
+   "good night",
+   "warm",
+   1,
+   "core"
+  ],
+  "night night": [
+   "good night (cute)",
+   "warm",
+   1,
+   "core"
+  ],
+  "sweet dreams": [
+   "good night (affectionate)",
+   "warm",
+   2,
+   "core"
+  ],
+  "miss u": [
+   "miss you",
+   "warm",
+   2,
+   "core"
+  ],
+  "thinking abt u": [
+   "thinking about you",
+   "warm",
+   2,
+   "core"
+  ],
+  "abt": [
+   "about",
+   "neutral",
+   0,
+   "core"
+  ],
+  "bc": [
+   "because",
+   "neutral",
+   0,
+   "core"
+  ],
+  "tho": [
+   "though",
+   "neutral",
+   0,
+   "core"
+  ],
+  "rly": [
+   "really",
+   "neutral",
+   0,
+   "core"
+  ],
+  "srsly": [
+   "seriously",
+   "neutral",
+   0,
+   "core"
+  ],
+  "obv": [
+   "obviously",
+   "neutral",
+   0,
+   "core"
+  ],
+  "prob": [
+   "probably",
+   "neutral",
+   0,
+   "core"
+  ],
+  "def": [
+   "definitely",
+   "warm",
+   0,
+   "core"
+  ],
+  "deffo": [
+   "definitely",
+   "warm",
+   0,
+   "uk"
+  ],
+  "ttys": [
+   "talk to you soon",
+   "warm",
+   1,
+   "core"
+  ],
+  "hyd": [
+   "how you doing?",
+   "warm",
+   1,
+   "core"
+  ],
+  "u up": [
+   "are you awake? late at night it usually means a hookup",
+   "physical",
+   1,
+   "core"
+  ],
+  "nsfw": [
+   "not safe for work (sexual)",
+   "physical",
+   1,
+   "online"
+  ],
+  "thirst trap": [
+   "a photo posted to get attention for looks",
+   "flirty",
+   1,
+   "core"
+  ],
+  "thirsty": [
+   "desperate for attention or attracted",
+   "flirty",
+   1,
+   "core"
+  ],
+  "snack": [
+   "attractive person",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "a whole snack": [
+   "very attractive",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "zaddy": [
+   "attractive, stylish older guy",
+   "flirty",
+   2,
+   "aave"
+  ],
+  "smash": [
+   "hook up",
+   "physical",
+   2,
+   "core"
+  ],
+  "hookup": [
+   "casual sex",
+   "physical",
+   1,
+   "core"
+  ],
+  "fwb": [
+   "friends with benefits",
+   "physical",
+   1,
+   "dating"
+  ],
+  "nsa": [
+   "no strings attached",
+   "physical",
+   0,
+   "dating"
+  ],
+  "ons": [
+   "one-night stand",
+   "physical",
+   0,
+   "dating"
+  ],
+  "situation": [
+   "a situationship",
+   "serious",
+   0,
+   "dating"
+  ],
+  "wifed up": [
+   "in a committed relationship",
+   "serious",
+   0,
+   "core"
+  ],
+  "cuffing season": [
+   "colder months when people want to couple up",
+   "flirty",
+   1,
+   "core"
+  ],
+  "cuffed": [
+   "taken, in a relationship",
+   "serious",
+   0,
+   "core"
+  ],
+  "shoot your shot": [
+   "make a move",
+   "flirty",
+   1,
+   "core"
+  ],
+  "shot my shot": [
+   "made a move",
+   "flirty",
+   1,
+   "core"
+  ],
+  "rent": [
+   "(as in 'rent free') stuck in my head",
+   "flirty",
+   0,
+   "core"
+  ],
+  "slaps": [
+   "is really good (music)",
+   "hype",
+   0,
+   "core"
+  ],
+  "bop": [
+   "a good song",
+   "hype",
+   0,
+   "core"
+  ],
+  "lit": [
+   "fun, exciting",
+   "hype",
+   0,
+   "millennial"
+  ],
+  "turnt": [
+   "hyped, drunk",
+   "hype",
+   0,
+   "aave"
+  ],
+  "faded": [
+   "high or drunk",
+   "neutral",
+   0,
+   "core"
+  ],
+  "tipsy": [
+   "a bit drunk; texts may be bolder than usual",
+   "flirty",
+   0,
+   "core"
+  ],
+  "drunk": [
+   "drunk; texts may be bolder than usual, revisit sober",
+   "flirty",
+   0,
+   "core"
+  ],
+  "lowk": [
+   "lowkey",
+   "playful",
+   0,
+   "core"
+  ],
+  "highk": [
+   "highkey",
+   "hype",
+   0,
+   "core"
+  ],
+  "mfs": [
+   "people (crude)",
+   "neutral",
+   0,
+   "core"
+  ],
+  "ts": [
+   "this (or 'this shit')",
+   "neutral",
+   0,
+   "core"
+  ],
+  "pmo": [
+   "pisses me off",
+   "upset",
+   0,
+   "core"
+  ],
+  "icl": [
+   "I can't lie",
+   "warm",
+   0,
+   "uk"
+  ],
+  "ion": [
+   "I don't",
+   "neutral",
+   0,
+   "aave"
+  ],
+  "fs": [
+   "for sure",
+   "warm",
+   0,
+   "core"
+  ],
+  "fosho": [
+   "for sure",
+   "warm",
+   0,
+   "aave"
+  ],
+  "fasho": [
+   "for sure",
+   "warm",
+   0,
+   "aave"
+  ],
+  "ykwim": [
+   "you know what I mean",
+   "neutral",
+   0,
+   "core"
+  ],
+  "ik": [
+   "I know",
+   "neutral",
+   0,
+   "core"
+  ],
+  "ikr": [
+   "I know right",
+   "agree",
+   0,
+   "core"
+  ],
+  "nm": [
+   "not much",
+   "dry",
+   0,
+   "core"
+  ],
+  "nmu": [
+   "not much, you? (asks back)",
+   "neutral",
+   1,
+   "core"
+  ],
+  "nun": [
+   "nothing",
+   "dry",
+   0,
+   "aave"
+  ],
+  "wsp": [
+   "what's up",
+   "neutral",
+   0,
+   "core"
+  ],
+  "sup": [
+   "what's up",
+   "neutral",
+   0,
+   "core"
+  ],
+  "hiii": [
+   "hi, with energy",
+   "warm",
+   1,
+   "core"
+  ],
+  "heyy": [
+   "hey, warm",
+   "warm",
+   1,
+   "core"
+  ],
+  "heyyy": [
+   "hey, extra warm or flirty",
+   "flirty",
+   1,
+   "core"
+  ],
+  "omg stop": [
+   "flattered, flustered",
+   "flirty",
+   2,
+   "core"
+  ],
+  "stoppp": [
+   "flattered or laughing",
+   "flirty",
+   1,
+   "core"
+  ],
+  "be so fr": [
+   "be serious",
+   "sarcastic",
+   0,
+   "core"
+  ],
+  "gatekeep": [
+   "keep something to yourself",
+   "playful",
+   0,
+   "core"
+  ],
+  "gaslight": [
+   "make someone doubt reality",
+   "negative",
+   0,
+   "core"
+  ],
+  "girlboss": [
+   "ambitious woman (often ironic)",
+   "playful",
+   0,
+   "core"
+  ],
+  "it's corny": [
+   "cringe",
+   "dry",
+   0,
+   "core"
+  ],
+  "corny": [
+   "cringe, cheesy",
+   "playful",
+   0,
+   "core"
+  ],
+  "cringe": [
+   "embarrassing",
+   "sarcastic",
+   0,
+   "core"
+  ],
+  "awkward": [
+   "uncomfortable",
+   "neutral",
+   0,
+   "core"
+  ],
+  "random": [
+   "unexpected (often 'random but...': they wanted an excuse to text)",
+   "warm",
+   1,
+   "core"
+  ],
+  "real quick": [
+   "briefly",
+   "neutral",
+   0,
+   "core"
+  ],
+  "anyways": [
+   "changing topic, sometimes to move past something",
+   "neutral",
+   0,
+   "core"
+  ],
+  "lowkey miss": [
+   "miss you (but playing it cool)",
+   "warm",
+   2,
+   "core"
+  ]
+ }
+}
