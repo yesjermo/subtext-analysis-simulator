@@ -161,6 +161,12 @@ shows its reasons, not mind reading; when it matters, ask the person.
 - Advice for getting physical is about pace and consent, and about not sending intimate pictures.
 - Texts that may mean self-harm (including algospeak like "unalive") get a check-in and a crisis line
   (988 in the US), not dating strategy.
+- Insults, threats, telling you to hurt yourself and threats to share pictures are flagged red, and the
+  advice is about staying safe (save evidence, block, report, StopNCII / Take It Down). An insult with a
+  laugh attached reads as friendly roasting; a threat never does.
+- Slurs are caught, including disguised spellings ("@" for "a", "f*g", "f a g"). Aimed at you, it's
+  hate; used about others, it's a warning sign. They're stored scrambled in `subtext/data/slurs.json` so
+  they never show up in the library or search; that file says how to add one.
 
 ## Project layout
 
