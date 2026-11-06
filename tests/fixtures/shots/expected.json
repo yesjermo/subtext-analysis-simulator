@@ -1,0 +1,29 @@
+{
+  "them": "Alex",
+  "convo": [
+    {
+      "side": "left",
+      "text": "hey stranger"
+    },
+    {
+      "side": "left",
+      "text": "been a minute huh"
+    },
+    {
+      "side": "right",
+      "text": "omg hiii how have you been"
+    },
+    {
+      "side": "left",
+      "text": "good!! wanna get coffee this week?"
+    },
+    {
+      "side": "right",
+      "text": "yes! saturday?"
+    },
+    {
+      "side": "left",
+      "text": "perfect see u then"
+    }
+  ]
+}
